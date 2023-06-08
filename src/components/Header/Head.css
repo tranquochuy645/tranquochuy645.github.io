@@ -3,13 +3,13 @@ header {
     flex-wrap: wrap;
     background-color: rgba(28, 20, 37, 0);
     padding: 0;
-    width: 100%;
+    width: 100vw;
     height: auto;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
+
     animation: slide-down 0.5s ease-in-out;
     transition: all 0.3s;
 }
@@ -29,6 +29,7 @@ header.undocked {
 
 header>div>a {
     margin-left: clamp(0px, calc(20% - 65px), 300px);
+    width: clamp(100px,30%,600px); ;
 }
 
 header>div>a:hover {
@@ -64,6 +65,7 @@ header>div>ul {
     display: flex;
     padding-right: 5vw;
     animation: slide-down 0.5s ease-out;
+    width: clamp(100px,70%,600px); ;
 }
 
 header>div>ul li {
