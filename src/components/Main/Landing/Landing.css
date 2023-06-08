@@ -1,81 +1,65 @@
-#landing{
+#landing {
     padding-left: 4vw;
     padding-right: 4vw;
 }
+
 #landing>.container:first-child {
-    padding-left: clamp(10px,5vw,40px);
-    padding-right: clamp(10px,5vw,40px);
-    font-size: clamp(15px, 7vw, 50px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#landing>.container:first-child{
-    background-image: linear-gradient(rgba(16, 16, 41,0.7),rgba(15, 4, 4,0.7));
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
     box-shadow: 4px 10px 15px 1px rgb(0, 0, 0);
-
-    
-}
-#landing>.container:first-child>h1{
     display: flex;
     flex-wrap: wrap;
-}
-#landing>.container:first-child>h1 span {
-    z-index: 0;
-    opacity: 0;
-    animation: appear 0.25s ease-in-out forwards;
+    min-width: min-content;
 }
 
-
-#landing>.container:first-child>h1 span:nth-child(1) {
-    animation-delay: 2s;
+#landing>.container:first-child>span {
+    flex-grow: 1;
+    padding: clamp(10px, 4vw, 60px);
+    min-width: 200px;
+    box-sizing: border-box;
 }
 
-#landing>.container:first-child>h1 span:nth-child(2) {
-    animation-delay: 2.25s;
+@media (min-width: 768px) {
+    #landing>.container:first-child>span:first-child {
+        max-width: 30%;
+    }
+
+    #landing>.container:first-child>span:last-child {
+        max-width: 55%;
+    }
 }
 
-#landing>.container:first-child>h1 span:nth-child(3) {
-    animation-delay: 2.5s;
+#landing>.container:first-child>span:first-child>img {
+    width: clamp(200px, 20vw, 400px);
+    height: clamp(200px, 20vw, 400px);
+    ;
 }
 
-#landing>.container:first-child>h1 span:nth-child(4) {
-    animation-delay: 2.75s;
+#landing>.container:first-child>span:first-child * {
+    margin-left: calc(50% - 100px);
+    border-radius: 30%;
 }
 
-#landing>.container:first-child>h1 span:nth-child(5) {
-    animation-delay: 3s;
+#landing>.container:first-child>span:last-child h1 {
+    font-size: clamp(23px, 4vw, 50px);
 }
 
-#landing>.container:first-child>h1 span:nth-child(6) {
-    animation-delay: 3.25s;
+#landing>.container:first-child>span:last-child p {
+    font-size: clamp(15px, 1.5vw, 30px);
 }
-
-#landing>.container:first-child>h1 span:nth-child(7) {
-    animation-delay: 3.5s;
-}
-
-#landing>.container:first-child>h1 span:nth-child(8) {
-    animation-delay: 3.75s;
-}
-
-#landing>.container:first-child>h1 span:nth-child(9) {
-    animation-delay: 4s;
-}
-
-#landing>.container:first-child>h1 span:nth-child(10) {
-    animation-delay: 4.25s;
-}
-#landing p{
-    opacity: 0;
-    animation: appear 1s ease-in-out forwards;
-}
-#landing p:first-of-type{
-    animation-delay: 4.5s;
-}
-#landing p:last-of-type{
-    animation-delay: 5.5s;
-}
+.cursor {
+    display: inline-block;
+    width: 0.5em; /* Adjust the width of the cursor as needed */
+    height: 1em; /* Adjust the height of the cursor as needed */
+    background-color: #ffffff; /* Set the color of the cursor */
+    animation: blink 0.3s infinite; /* Add a blinking animation to the cursor */
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
