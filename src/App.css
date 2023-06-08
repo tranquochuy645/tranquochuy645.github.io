@@ -1,6 +1,7 @@
 section {
   box-sizing: border-box;
-  padding-top: clamp(70px, 12vw, 140px)
+  padding-top: clamp(70px, 12vw, 140px);
+  min-height:100vh;
 }
 
 .font-1 {

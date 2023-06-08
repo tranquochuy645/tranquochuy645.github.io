@@ -35,6 +35,9 @@
 }
 
 #landing>.about>span:first-of-type * {
+    opacity: 0;
+    animation: appear 1s forwards;
+    animation-delay: 2s;
     margin-left: calc(50% - 100px);
     border-radius: 30%;
 }
