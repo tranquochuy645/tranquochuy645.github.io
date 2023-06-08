@@ -3,7 +3,7 @@
     padding-right: 4vw;
 }
 
-#landing>.container:first-child {
+#landing>.about {
     background-image: linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
     box-shadow: 4px 10px 15px 1px rgb(0, 0, 0);
     display: flex;
@@ -11,7 +11,7 @@
     min-width: min-content;
 }
 
-#landing>.container:first-child>span {
+#landing>.about>span {
     flex-grow: 1;
     padding: clamp(10px, 4vw, 60px);
     min-width: 200px;
@@ -19,31 +19,31 @@
 }
 
 @media (min-width: 768px) {
-    #landing>.container:first-child>span:first-child {
+    #landing>.about>span:first-of-type {
         max-width: 30%;
     }
 
-    #landing>.container:first-child>span:last-child {
+    #landing>.about>span:last-of-type {
         max-width: 55%;
     }
 }
 
-#landing>.container:first-child>span:first-child>img {
+#landing>.about>span:first-of-type>img {
     width: clamp(200px, 20vw, 400px);
     height: clamp(200px, 20vw, 400px);
     ;
 }
 
-#landing>.container:first-child>span:first-child * {
+#landing>.about>span:first-of-type * {
     margin-left: calc(50% - 100px);
     border-radius: 30%;
 }
 
-#landing>.container:first-child>span:last-child h1 {
+#landing>.about>span:last-of-type h1 {
     font-size: clamp(23px, 4vw, 50px);
 }
 
-#landing>.container:first-child>span:last-child p {
+#landing>.about>span:last-of-type p {
     font-size: clamp(15px, 1.5vw, 30px);
 }
 .cursor {
@@ -54,12 +54,5 @@
     animation: blink 0.3s infinite; /* Add a blinking animation to the cursor */
   }
   
-  @keyframes blink {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
+
   
