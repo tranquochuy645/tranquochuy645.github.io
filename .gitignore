@@ -26,4 +26,3 @@ dist-ssr
 #shell
 *.sh
 
-package-lock.json
