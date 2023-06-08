@@ -1,0 +1,41 @@
+/* Browser filter */
+/* Some rule to ensure different browsers's performance */
+/** Internet Explorer */
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  body>#root>svg>g:last-of-type {
+    filter: none !important;
+  }
+}
+
+/** Microsoft Edge */
+@supports (-ms-ime-align: auto) {}
+
+/** Mozilla Firefox */
+@-moz-document url-prefix() {
+  body>#root>svg>g:last-of-type {
+    filter: none !important;
+  }
+}
+
+/** Safari */
+@media not all and (min-resolution: 0.001dpcm) {
+  body>#root>svg>g:last-of-type {
+    filter: none !important;
+  }
+}
+
+/** Chrominum */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {}
+
+/* Browser filter */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: auto;
+}
+
+
+main {
+  color: white;
+}

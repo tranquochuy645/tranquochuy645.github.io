@@ -1,0 +1,17 @@
+section {
+  box-sizing: border-box;
+  padding-top: clamp(70px, 12vw, 140px)
+}
+
+.font-1 {
+  font-family: "Alfa Slab One", "Poppins";
+  font-weight: 1000;
+}
+
+.blue {
+  color: rgb(91, 107, 255);
+}
+
+.bold {
+  font-weight: bold;
+}

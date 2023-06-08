@@ -1,0 +1,48 @@
+ body>#root>svg {
+     height: 100vh;
+     width: 100vw;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: -100;
+
+ }
+
+ body>#root>svg>rect {
+     width: 100%;
+     height: 100%;
+
+ }
+
+
+ body>#root>svg>g {
+
+     fill: "white";
+     stroke-dasharray: 1000;
+     stroke-dashoffset: 0;
+     animation: draw_background 10s linear infinite;
+ }
+ body>#root>svg>g:last-of-type{
+    filter:url(#glow);
+   
+ }
+ body>#root>svg>g:last-of-type>circle{
+    animation: pulse 3s ease-in-out infinite;
+ }
+
+
+ @keyframes pulse {
+     0% {
+         filter: brightness(1);
+     }
+
+     50% {
+         
+         filter: brightness(0.5);
+     }
+
+     100% {
+
+         filter: brightness(1);
+     }
+ }
