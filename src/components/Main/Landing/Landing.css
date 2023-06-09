@@ -1,40 +1,40 @@
 #landing {
     padding-left: 4vw;
     padding-right: 4vw;
+    width: 100%;
 }
 
-#landing>.about {
+.about {
+    width: 100vw;
+    max-width: 100%;
+    min-width: 390px;
     background-image: linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
     box-shadow: 4px 10px 15px 1px rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
-    min-width: min-content;
 }
 
-#landing>.about>span {
-    flex-grow: 1;
+.about-span {
+    /* flex-grow: 1; */
     padding: clamp(10px, 4vw, 60px);
-    min-width: 200px;
+    min-width: 350px;
     box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-    #landing>.about>span:first-of-type {
-        max-width: 30%;
-    }
-
-    #landing>.about>span:last-of-type {
-        max-width: 55%;
-    }
+#about-span-1 {
+    width: 30%;
 }
 
-#landing>.about>span:first-of-type>img {
+#about-span-2 {
+    width: 70%;
+}
+
+#profile-img {
     width: clamp(200px, 20vw, 400px);
     height: clamp(200px, 20vw, 400px);
-    ;
 }
 
-#landing>.about>span:first-of-type * {
+#about-span-1 * {
     opacity: 0;
     animation: appear 1s forwards;
     animation-delay: 2s;
@@ -42,20 +42,24 @@
     border-radius: 30%;
 }
 
-#landing>.about>span:last-of-type h1 {
+#about-span-2 h1 {
     font-size: clamp(23px, 4vw, 50px);
 }
 
-#landing>.about>span:last-of-type p {
+#about-span-2 p {
     font-size: clamp(15px, 1.5vw, 30px);
 }
+
 .cursor {
     display: inline-block;
-    width: 0.5em; /* Adjust the width of the cursor as needed */
-    height: 1em; /* Adjust the height of the cursor as needed */
-    background-color: #ffffff; /* Set the color of the cursor */
-    animation: blink 0.3s infinite; /* Add a blinking animation to the cursor */
-  }
-  
+    width: 0.5em;
+    height: 1em;
+    background-color: #ffffff;
+    animation: blink 0.3s infinite;
+}
 
-  
+@media (max-width:700px) {
+    .about-span {
+        width: 100% ;
+    }
+}

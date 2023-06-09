@@ -6,9 +6,9 @@ function BackGround() {
 
     return (
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" preserveAspectRatio="none" >
-            <rect fill="#260026" />
-            <g fill="none" stroke="#3B1B4F" strokeWidth="1">
+        <svg id="bgrn-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" preserveAspectRatio="none" >
+            <rect id="bgrn-rect" fill="#260026" />
+            <g id="bgrn-g-1" fill="none" stroke="#3B1B4F" strokeWidth="1">
                 <path
                     d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63' />
                 <path d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764' />
@@ -27,21 +27,21 @@ function BackGround() {
                     <feMergeNode in="SourceGraphic" />
                 </feMerge>
             </filter>
-            <g fill="#ff82b2" >
-                <circle cx='769' cy='229' r='3' />
-                <circle cx='539' cy='269' r='3' />
-                <circle cx='603' cy='493' r='3' />
-                <circle cx='731' cy='737' r='3' />
-                <circle cx='520' cy='660' r='3' />
-                <circle cx='309' cy='538' r='3' />
-                <circle cx='295' cy='764' r='3' />
-                <circle cx='40' cy='599' r='3' />
-                <circle cx='102' cy='382' r='3' />
-                <circle cx='127' cy='80' r='3' />
-                <circle cx='370' cy='105' r='3' />
-                <circle cx='578' cy='42' r='3' />
-                <circle cx='237' cy='261' r='3' />
-                <circle cx='390' cy='382' r='3' />
+            <g id="bgrn-g-2" fill="#ff82b2" >
+                <circle className='bgrn-g-2-cir' cx='769' cy='229' r='3' />
+                <circle className='bgrn-g-2-cir' cx='539' cy='269' r='3' />
+                <circle className='bgrn-g-2-cir' cx='603' cy='493' r='3' />
+                <circle className='bgrn-g-2-cir' cx='731' cy='737' r='3' />
+                <circle className='bgrn-g-2-cir' cx='520' cy='660' r='3' />
+                <circle className='bgrn-g-2-cir' cx='309' cy='538' r='3' />
+                <circle className='bgrn-g-2-cir' cx='295' cy='764' r='3' />
+                <circle className='bgrn-g-2-cir' cx='40' cy='599' r='3' />
+                <circle className='bgrn-g-2-cir' cx='102' cy='382' r='3' />
+                <circle className='bgrn-g-2-cir' cx='127' cy='80' r='3' />
+                <circle className='bgrn-g-2-cir' cx='370' cy='105' r='3' />
+                <circle className='bgrn-g-2-cir' cx='578' cy='42' r='3' />
+                <circle className='bgrn-g-2-cir' cx='237' cy='261' r='3' />
+                <circle className='bgrn-g-2-cir' cx='390' cy='382' r='3' />
             </g>
         </svg>
 

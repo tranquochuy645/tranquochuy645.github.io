@@ -1,0 +1,19 @@
+.about-span {
+    width: 100% !important;
+}
+
+#nav-ul {
+    display: none !important;
+}
+
+
+#menu-btn-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+#menu-svg {
+
+    height: clamp(60px, 7vw, 120px) !important;
+    width: clamp(60px, 7vw, 120px) !important;
+}

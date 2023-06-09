@@ -1,50 +1,47 @@
-header {
+#nav-wrapper {
     z-index: 100;
-    flex-wrap: wrap;
     background-color: rgba(28, 20, 37, 0);
     padding: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
-
     animation: slide-down 0.5s ease-in-out;
     transition: all 0.3s;
 }
 
 
-
-
-header.slide-up {
+#nav-wrapper.slide-up {
     opacity: 0;
     transform: translateY(-100%);
 }
 
-header.undocked {
-    background-color: rgba(16, 0, 33,0.9);
+#nav-wrapper.undocked {
+    background-color: rgba(16, 0, 33, 0.9);
     box-shadow: 0px 4px 7px black;
 }
 
-header>div>a {
-    margin-left: clamp(0px, calc(20% - 65px), 300px);
-    width: clamp(100px,30%,600px); ;
+#nav-div-1-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
 }
 
-header>div>a:hover {
+#nav-div-1-a:hover {
     background-color: rgba(67, 41, 86, 0.525);
     box-shadow: 4px 10px 15px 1px rgba(75, 75, 75, 0.5);
 }
 
-header>div>a>svg {
-
-    height: clamp(60px, 7vw, 120px);
-    width: clamp(60px, 7vw, 120px);
+#logo-svg {
+    height: clamp(60px, 8vh, 320px);
+    width: clamp(60px, 8vh, 320px);
 }
 
 
-header>div>a>svg>g {
+#logo-svg-g {
     stroke-dasharray: 1000;
     stroke-dashoffset: 0;
     animation: draw_logo 15s linear;
@@ -52,40 +49,38 @@ header>div>a>svg>g {
 
 
 
-header>div:first-of-type {
+#nav-div-1 {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
 }
 
-header>div>ul {
+#nav-ul {
     list-style: none;
     margin: 0;
     display: flex;
-    padding-right: 5vw;
+    padding-right: 5%;
+    width: 60%;
     animation: slide-down 0.5s ease-out;
-    width: clamp(100px,70%,600px); ;
+
 }
 
-header>div>ul li {
+.nav-ul-li {
     height: 100%;
     min-height: 6vh;
-    width: 10vw;
-    min-width: fit-content;
-    transition: 0.4s;
+    width: 30%;
 
+    transition: 0.4s;
 }
 
-header>div>ul li>a {
-    padding-right: 2vw;
-    padding-left: 2vw;
+.nav-ul-li-a {
+    width: 100%;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: clamp(12px, 3.5vw, 30px);
+    font-size: clamp(15px, 2vw, 60px);
     height: 100%;
     border-radius: 5px;
     transition: 0.4s;
@@ -93,49 +88,26 @@ header>div>ul li>a {
 }
 
 
-header>div>ul li>a:hover {
-    background-color: rgba(67, 41, 86, 0.525);
-    box-shadow: 4px 10px 15px 1px rgba(75, 75, 75, 0.5);
-}
-header>div>ul li>a:active {
+.nav-ul-li-a:hover {
     background-color: rgba(67, 41, 86, 0.525);
     box-shadow: 4px 10px 15px 1px rgba(75, 75, 75, 0.5);
 }
 
-header>div>ul img {
+.nav-ul-li-a:active {
+    background-color: rgba(67, 41, 86, 0.525);
+    box-shadow: 4px 10px 15px 1px rgba(75, 75, 75, 0.5);
+}
+
+.nav-ul-li-a-img {
     height: clamp(15px, 5vw, 40px);
     width: clamp(15px, 5vw, 40px);
 }
 
-header>.menu-btn-wrapper {
+#menu-btn-wrapper {
     padding-right: 3vw;
     display: none;
 }
 
-@media (max-width: 768px) {
-    header>div>ul {
-        display: none;
-    }
-
-    header>div:first-of-type {
-        width: auto;
-    }
-
-    header>.menu-btn-wrapper {
-        display: block;
-    }
-
-    header>.menu-btn-wrapper>svg {
-
-        height: clamp(60px, 7vw, 120px);
-        width: clamp(60px, 7vw, 120px);
-    }
-}
-
-header>div>ul.opened {
-    display: flex;
-    flex-direction: column;
-}
 
 
 .line {
@@ -155,12 +127,32 @@ header>div>ul.opened {
     stroke-dasharray: 56.5, 200;
 }
 
-.menu-btn-wrapper.opened .line1,
-.menu-btn-wrapper.opened .line3 {
+#menu-btn-wrapper.opened .line1,
+#menu-btn-wrapper.opened .line3 {
     stroke-dasharray: 100, 200;
     stroke-dashoffset: -121;
 }
 
-.menu-btn-wrapper.opened .line2 {
+#menu-btn-wrapper.opened .line2 {
     stroke-dashoffset: 57;
+}
+
+@media (max-width: 700px) {
+    #nav-ul {
+        display: none;
+    }
+
+    #menu-btn-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu-svg {
+        height: clamp(60px, 7vw, 120px);
+        width: clamp(60px, 7vw, 120px);
+    }
+}
+#nav-ul.opened {
+    display: flex ;
+    flex-direction: column;
 }

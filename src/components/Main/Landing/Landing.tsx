@@ -84,12 +84,12 @@ function Landing() {
     return (
 
         <div className='about'>
-            <span>
-                <img src="/assets/profile.jpeg" alt="profile picture" />
+            <span id="about-span-1" className='about-span'>
+                <img id="profile-img" src="/assets/profile.jpeg" alt="profile picture" />
                 <h2>Tran Quoc Huy</h2>
                 <p>Student</p>
             </span>
-            <span>
+            <span id="about-span-2" className='about-span'>
                 <h1 className="font-1" >
                     <span></span>
                     <span className='blue'></span>
