@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "acp":"git add . && git commit -m 'acp' && it push"
+    "acp":"git add . && git commit -m 'acp' && git push"
     
   },
   "dependencies": {
