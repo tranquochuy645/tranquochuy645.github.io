@@ -9,9 +9,9 @@ function Landing() {
     const arrT = [
         "Hi, I'm ",
         "Huy",
-        "I'm currently studying Embedded Systems and IoT at ",
+        "I will be graduating in June 2024 with a major in Embedded Systems and IoT from ",
         "HCMC University of Technology and Education",
-        "With my graduation anticipated by June 2024, my primary aspiration is to become a ",
+        "My main goal is to pursue a career as a ",
         "full-stack developer"
     ]
 
