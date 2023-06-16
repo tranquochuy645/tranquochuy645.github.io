@@ -71,7 +71,7 @@ function App() {
   return (
     <>
       {showNav && <Head />}
-      <main>
+      <main className='font-evil'>
         <section id='landing'>
           <Landing/>
         </section>

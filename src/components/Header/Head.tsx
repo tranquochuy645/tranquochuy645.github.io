@@ -6,7 +6,7 @@ const Head = () => {
         document.getElementById("nav-ul")?.classList.toggle("opened");
     }
     return (
-        <header id="nav-wrapper">
+        <header id="nav-wrapper" className='font-evil'>
             <div id="nav-div-1" >
                 <a id="nav-div-1-a" href="#landing" aria-label="Landing section">
                     <svg id="logo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox='0 0 70 80'>
@@ -32,11 +32,6 @@ const Head = () => {
                     <path className="line line1" d="M20 28H22.0935M22.0935 28H76C76 28 86.0698 25.5 91 52C99 95 76 73 76 73L22.0935 28Z" stroke="white" strokeWidth="7" strokeLinejoin="round" />
                 </svg>
             </div>
-
-
-
-
-
         </header>
     );
 }

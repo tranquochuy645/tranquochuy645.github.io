@@ -2,12 +2,14 @@
     padding-left: 4vw;
     padding-right: 4vw;
     width: 100%;
+
 }
 
-.about {
+#about {
     width: 100vw;
     max-width: 100%;
     min-width: 390px;
+
     background-image: linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
     box-shadow: 4px 10px 15px 1px rgb(0, 0, 0);
     display: flex;
@@ -15,7 +17,7 @@
 }
 
 .about-span {
-    /* flex-grow: 1; */
+    flex-grow: 1;
     padding: clamp(10px, 4vw, 60px);
     min-width: 350px;
     box-sizing: border-box;
@@ -27,6 +29,8 @@
 
 #about-span-2 {
     width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
 #profile-img {
@@ -58,8 +62,32 @@
     animation: blink 0.3s infinite;
 }
 
+#download {
+    display: none;
+    align-self: center;
+    font-size: clamp(22px,2vw,40px);
+    width: clamp(170px,15vw,400px);
+    height: clamp(60px,6vw,100px);
+    background-color: rgb(64, 0, 93);
+    color:#4fb420;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px black;
+    animation: slide-down 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.3s;
+}
+
+
+#download:hover {
+    background-color: rgb(87, 0, 127);
+}
+
+
 @media (max-width:700px) {
     .about-span {
-        width: 100% ;
+        width: 100%;
     }
 }

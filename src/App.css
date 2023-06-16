@@ -1,18 +1,40 @@
+main {
+  color: white;
+}
 section {
   box-sizing: border-box;
   padding-top: clamp(70px, 12vw, 140px);
   min-height:100vh;
 }
 
-.font-1 {
-  font-family: "Alfa Slab One", "Poppins";
-  font-weight: 1000;
+
+.green {
+  color: #4fb420;
 }
 
-.blue {
-  color: rgb(91, 107, 255);
-}
 
-.bold {
-  font-weight: bold;
+
+@font-face {
+  font-family: choco;
+  src: url("fonts/chocopy-font/Chocopy-ownMB.ttf");
+}
+@font-face {
+  font-family: pixel;
+  src: url("fonts/public-pixel-font/PublicPixel-z84yD.ttf");
+}
+@font-face {
+  font-family: evil;
+  src: url("fonts/evil-empire-font/EvilEmpire-4BBVK.ttf");
+}
+.font-pixel{
+  font-family: pixel;
+}
+.font-choco{
+  font-family: choco;
+}
+.font-evil{
+  font-family: evil;
+}
+.font-default{
+  font-family: Arial, Helvetica, sans-serif;
 }

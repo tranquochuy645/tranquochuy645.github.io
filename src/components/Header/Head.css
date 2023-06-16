@@ -9,7 +9,7 @@
     left: 0;
     display: flex;
     animation: slide-down 0.5s ease-in-out;
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 
 
@@ -69,7 +69,6 @@
     height: 100%;
     min-height: 6vh;
     width: 30%;
-
     transition: 0.4s;
 }
 
@@ -151,8 +150,10 @@
         height: clamp(60px, 7vw, 120px);
         width: clamp(60px, 7vw, 120px);
     }
-}
-#nav-ul.opened {
-    display: flex ;
-    flex-direction: column;
+
+    #nav-ul.opened {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
