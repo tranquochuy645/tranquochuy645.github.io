@@ -19,15 +19,15 @@ section {
 
 @font-face {
   font-family: choco;
-  src: url("fonts/chocopy-font/Chocopy-ownMB.ttf");
+  src: url("/fonts/chocopy-font/Chocopy-ownMB.ttf");
 }
 @font-face {
   font-family: pixel;
-  src: url("fonts/public-pixel-font/PublicPixel-z84yD.ttf");
+  src: url("/fonts/public-pixel-font/PublicPixel-z84yD.ttf");
 }
 @font-face {
   font-family: evil;
-  src: url("fonts/evil-empire-font/EvilEmpire-4BBVK.ttf");
+  src: url("/fonts/evil-empire-font/EvilEmpire-4BBVK.ttf");
 }
 .font-pixel{
   font-family: pixel;
