@@ -1,5 +1,7 @@
 /* PinnedRepo.css */
 .repo-container{
+    opacity: 0;
+    flex-grow: 1;
     border: solid white;
     width: 500px;
     margin: 2%;
@@ -12,9 +14,11 @@
     justify-content: space-between;
     transition: 0.3s;
 }
+.repo-container.visible{
+    animation: appear 1s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+}
 .repo-container:hover{
     transform: scale(1.05);
-
     background-image:linear-gradient(rgba(16, 16, 41, 1), rgba(15, 4, 4, 1));
 }
 .icon{

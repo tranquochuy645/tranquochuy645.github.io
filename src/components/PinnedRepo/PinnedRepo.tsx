@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import VisibilitySensor from 'react-visibility-sensor';
 import './PinnedRepo.css';
 
 interface Repository {
@@ -12,7 +13,7 @@ interface Repository {
   size: number;
   created_at: string;
   commits_url: string;
-  topics:Array<string>;
+  topics: Array<string>;
 }
 
 interface PinnedRepoProps {
@@ -68,6 +69,10 @@ const formatTimestamp = (timestamp: string) => {
 const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
   const [commitCount, setCommitCount] = useState<string>("0");
   const created_time = formatTimestamp(repository.created_at);
+  const [isVisible, setIsVisible] = useState(false); // Track visibility state
+  const handleVisibilityChange = (isVisible: boolean) => {
+    setIsVisible(isVisible);
+  };
   useEffect(() => {
     getCommitCount(repository.commits_url)
       .then((count) => {
@@ -85,38 +90,40 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
   const languageIcon = getLanguageIcon(repository.language);
 
   return (
-    <a className="repo-container none-decoration" href={repository.html_url} aria-label='visit repo'>
-      <div className="repo-info">
-        <h1 className='green'>
-          {repository.name}
-        </h1>
-        <h3 className='white font-default'>{repository.description}</h3>
-      </div>
-      <div className="repo-stats white font-default">
-        <span>
-          {languageIcon}&nbsp;&nbsp;{repository.language}
-        </span>
-        <span>
-          &nbsp;  {repository.stargazers_count}&nbsp;
-          <img className="icon" src="/assets/imgs/star.svg"></img>
-        </span>
-        <span>
-          &nbsp;  {repository.forks_count}&nbsp;
-          <img className="icon" src="/assets/imgs/fork.svg"></img>
-        </span>
-        <span>
-          &nbsp;{commitCount}&nbsp;commits
-        </span>
-        <span>
-          &nbsp;&nbsp;{displaySize}
-        </span>
-        <p>Created at {created_time}</p>
-       
-        <p> {repository.topics.map((item)=>{
-          return <span> &nbsp;#{item}</span>
-        })}</p>
-      </div>
-    </a>
+    <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
+      <a className={`repo-container none-decoration  ${isVisible ? 'visible' : ''}`} href={repository.html_url} aria-label='visit repo'>
+        <div className="repo-info">
+          <h1 className='green'>
+            {repository.name}
+          </h1>
+          <h3 className='white font-default'>{repository.description}</h3>
+        </div>
+        <div className="repo-stats white font-default">
+          <span>
+            {languageIcon}&nbsp;&nbsp;{repository.language}
+          </span>
+          <span>
+            &nbsp;  {repository.stargazers_count}&nbsp;
+            <img className="icon" src="/assets/imgs/star.svg"></img>
+          </span>
+          <span>
+            &nbsp;  {repository.forks_count}&nbsp;
+            <img className="icon" src="/assets/imgs/fork.svg"></img>
+          </span>
+          <span>
+            &nbsp;{commitCount}&nbsp;commits
+          </span>
+          <span>
+            &nbsp;&nbsp;{displaySize}
+          </span>
+          <p>Created at {created_time}</p>
+
+          <p> {repository.topics.map((item) => {
+            return <span> &nbsp;#{item}</span>
+          })}</p>
+        </div>
+      </a>
+    </VisibilitySensor>
   );
 };
 
