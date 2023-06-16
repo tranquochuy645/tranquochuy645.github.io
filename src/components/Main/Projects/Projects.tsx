@@ -14,6 +14,8 @@ interface Repository {
     size: number;
     created_at: string;
     commits_url:string;
+    homepage:string;
+    topics:Array<string>;
 }
 
 function Projects() {
@@ -24,7 +26,8 @@ function Projects() {
         fetch(url)
             .then((response) => response.json())
             .then((data: Repository[]) => {
-                setRepositories(data);
+                const filteredRepositories = data.filter(repo => repo.homepage !="");
+                setRepositories(filteredRepositories);
             })
             .catch((error) => {
                 console.error('Error fetching repositories:', error);

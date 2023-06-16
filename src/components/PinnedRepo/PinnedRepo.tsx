@@ -12,6 +12,7 @@ interface Repository {
   size: number;
   created_at: string;
   commits_url: string;
+  topics:Array<string>;
 }
 
 interface PinnedRepoProps {
@@ -110,6 +111,10 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
           &nbsp;&nbsp;{displaySize}
         </span>
         <p>Created at {created_time}</p>
+       
+        <p> {repository.topics.map((item)=>{
+          return <span> &nbsp;#{item}</span>
+        })}</p>
       </div>
     </a>
   );
