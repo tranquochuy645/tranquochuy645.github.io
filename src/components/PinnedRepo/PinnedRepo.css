@@ -7,7 +7,7 @@
     margin: 2%;
     padding: 2%;
     background-image:linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
-    box-shadow: 10px 13px 13px black;
+    box-shadow: 7px 7px 7px black;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
