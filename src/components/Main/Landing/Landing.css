@@ -31,6 +31,7 @@
     width: 70%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10vh;
 }
 
 #profile-img {
@@ -52,6 +53,7 @@
 
 #about-span-2 p {
     font-size: clamp(15px, 1.5vw, 30px);
+    
 }
 
 .cursor {
@@ -64,6 +66,7 @@
 
 #download {
     display: none;
+    margin-top:10vh;
     align-self: center;
     font-size: clamp(22px,2vw,40px);
     width: clamp(170px,15vw,400px);

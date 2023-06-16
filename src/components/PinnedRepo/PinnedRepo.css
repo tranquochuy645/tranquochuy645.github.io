@@ -14,7 +14,8 @@
 }
 .repo-container:hover{
     transform: scale(1.05);
-    background-image:linear-gradient(rgba(36, 36, 84, 0.807), rgba(60, 15, 15, 0.598));
+
+    background-image:linear-gradient(rgba(16, 16, 41, 1), rgba(15, 4, 4, 1));
 }
 .icon{
     height: 20px;
