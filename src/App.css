@@ -9,7 +9,10 @@ section {
 
 
 .green {
-  color: #4fb420;
+  color: #4fb420 !important;
+}
+.white{
+  color: white;
 }
 
 

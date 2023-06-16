@@ -59,14 +59,14 @@ const getCommitCount = (commits_url: string): Promise<string> => {
       }
     );
 };
-const formatTimestamp = (timestamp:string) => {
+const formatTimestamp = (timestamp: string) => {
   const date = new Date(timestamp);
   return date.toLocaleString();
 };
 
 const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
   const [commitCount, setCommitCount] = useState<string>("0");
-  const created_time=formatTimestamp(repository.created_at);
+  const created_time = formatTimestamp(repository.created_at);
   useEffect(() => {
     getCommitCount(repository.commits_url)
       .then((count) => {
@@ -84,15 +84,14 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
   const languageIcon = getLanguageIcon(repository.language);
 
   return (
-    <div className="repo-container font-default">
+    <a className="repo-container font-default none-decoration" href={repository.html_url} aria-label='visit repo'>
       <div className="repo-info">
-        <h2>
-          <a href={repository.html_url}>{repository.name}</a>
-        </h2>
-        <p>Created at {created_time}</p>
-        <h3>{repository.description}</h3>
+        <h1 className='green'>
+          {repository.name}
+        </h1>
+        <h3 className='white'>{repository.description}</h3>
       </div>
-      <div className="repo-stats">
+      <div className="repo-stats white">
         <span>
           {languageIcon}&nbsp;&nbsp;{repository.language}
         </span>
@@ -110,9 +109,9 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
         <span>
           &nbsp;&nbsp;{displaySize}
         </span>
-
+        <p>Created at {created_time}</p>
       </div>
-    </div>
+    </a>
   );
 };
 

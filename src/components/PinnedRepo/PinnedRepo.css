@@ -7,9 +7,20 @@
     background-image:linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
     box-shadow: 4px 4px 4px black;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+.repo-container:hover{
+    transform: scale(1.05);
+    background-image:linear-gradient(rgba(36, 36, 84, 0.807), rgba(60, 15, 15, 0.598));
 }
 .icon{
     height: 20px;
     width: 20px;
     transform: translateY(20%);
+}
+.none-decoration{
+    text-decoration: none;
 }
