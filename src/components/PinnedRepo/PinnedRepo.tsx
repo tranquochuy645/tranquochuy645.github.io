@@ -98,11 +98,11 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
         </span>
         <span>
           &nbsp;  {repository.stargazers_count}&nbsp;
-          <img className="icon" src="/assets/star.svg"></img>
+          <img className="icon" src="/assets/imgs/star.svg"></img>
         </span>
         <span>
           &nbsp;  {repository.forks_count}&nbsp;
-          <img className="icon" src="/assets/fork.svg"></img>
+          <img className="icon" src="/assets/imgs/fork.svg"></img>
         </span>
         <span>
           &nbsp;{commitCount}&nbsp;commits
