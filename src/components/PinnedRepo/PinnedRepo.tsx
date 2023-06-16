@@ -85,14 +85,14 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
   const languageIcon = getLanguageIcon(repository.language);
 
   return (
-    <a className="repo-container font-default none-decoration" href={repository.html_url} aria-label='visit repo'>
+    <a className="repo-container none-decoration" href={repository.html_url} aria-label='visit repo'>
       <div className="repo-info">
         <h1 className='green'>
           {repository.name}
         </h1>
-        <h3 className='white'>{repository.description}</h3>
+        <h3 className='white font-default'>{repository.description}</h3>
       </div>
-      <div className="repo-stats white">
+      <div className="repo-stats white font-default">
         <span>
           {languageIcon}&nbsp;&nbsp;{repository.language}
         </span>
