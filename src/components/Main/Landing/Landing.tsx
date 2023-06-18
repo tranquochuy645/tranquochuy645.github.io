@@ -38,7 +38,7 @@ function Landing() {
             "I will be graduating in June 2024 with a major in Embedded Systems and IoT from ",
             "HCMC University of Technology and Education",
             "My main goal is to pursue a career as a ",
-            "full-stack developer"
+            "software developer"
         ]
         const arrTTotalLength = arrT.reduce((accumulator, currentValue) => accumulator + currentValue.length, 0);
         const el_wrapper = document.querySelector('#about-span-2');
