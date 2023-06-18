@@ -5,6 +5,7 @@ import Landing from './components/Main/Landing/Landing.tsx';
 import Projects from  './components/Main/Projects/Projects.tsx';
 import Skills from './components/Main/Skills/Skills.tsx';
 import Contact from './components/Main/Contact/Contact.tsx';
+import Footer from './components/Footer/Footer.tsx';
 function App() {
   const [showNav, setShowNav] = useState(true);
   let yPos = window.pageYOffset || document.documentElement.scrollTop;
@@ -85,11 +86,8 @@ function App() {
           <Contact/>
         </section>
       </main>
-      <footer>
-        <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
-      </footer>
-
-    </>
+      <Footer/>
+    </> 
   );
 }
 

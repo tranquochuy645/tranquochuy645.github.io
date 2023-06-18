@@ -1,0 +1,7 @@
+.decor-line {
+    opacity: 0;
+}
+
+.decor-line.visible {
+    animation: appear 2s ease-in forwards;
+}

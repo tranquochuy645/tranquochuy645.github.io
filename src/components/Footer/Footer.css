@@ -1,0 +1,8 @@
+footer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(37, 9, 31, 0.402),rgb(0, 0, 0));
+    color: white;
+}

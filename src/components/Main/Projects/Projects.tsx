@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import PinnedRepo from '../../PinnedRepo/PinnedRepo';
+import PinnedRepo from './PinnedRepo/PinnedRepo.tsx';
 import './Projects.css';
+import DecorLine from '../../DecorLine/DecorLine.tsx';
 
 interface Repository {
     id: number;
@@ -35,10 +36,12 @@ function Projects() {
     return (
         <>
             <h1 className='tabLeft'>My Projects</h1>
+            <DecorLine/>
             <div id="projects-container">
                 {repositories.map((repository) => (
                     <PinnedRepo key={repository.id} repository={repository} />
                 ))}
+                <a href='https://github.com/tranquochuy645'>Checkout my Github</a>
             </div>
         </>
     );
