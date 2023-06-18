@@ -15,6 +15,15 @@ section {
 .white{
   color: white;
 }
+.tabLeft{
+  padding-left: 4vw;
+}
+h1{
+  font-size: xx-large;
+}
+h2{
+  font-size: large;
+}
 
 
 

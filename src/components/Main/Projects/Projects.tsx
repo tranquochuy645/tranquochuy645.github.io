@@ -1,11 +1,9 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import PinnedRepo from '../../PinnedRepo/PinnedRepo';
 import './Projects.css';
 
 interface Repository {
     id: number;
-    name: string;
-    full_name: string;
     html_url: string;
     description: string;
     language: string;
@@ -13,9 +11,9 @@ interface Repository {
     forks_count: number;
     size: number;
     created_at: string;
-    commits_url:string;
-    homepage:string;
-    topics:Array<string>;
+    commits_url: string;
+    homepage: string;
+    topics: Array<string>;
 }
 
 function Projects() {
@@ -26,7 +24,7 @@ function Projects() {
         fetch(url)
             .then((response) => response.json())
             .then((data: Repository[]) => {
-                const filteredRepositories = data.filter(repo => repo.homepage !="");
+                const filteredRepositories = data.filter(repo => repo.homepage != "");
                 setRepositories(filteredRepositories);
             })
             .catch((error) => {
@@ -36,13 +34,12 @@ function Projects() {
 
     return (
         <>
-        <h1>My Projects</h1>
-        <div id="projects-container">
-            
-            {repositories.map((repository) => (
-                <PinnedRepo key={repository.id} repository={repository} />
-            ))}
-        </div>
+            <h1 className='tabLeft'>My Projects</h1>
+            <div id="projects-container">
+                {repositories.map((repository) => (
+                    <PinnedRepo key={repository.id} repository={repository} />
+                ))}
+            </div>
         </>
     );
 }
