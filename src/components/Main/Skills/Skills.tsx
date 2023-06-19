@@ -160,11 +160,15 @@ function Skills() {
                 <h1 className='tabLeft'>What I do ?&nbsp;&nbsp;&nbsp;</h1>
                 <DecorLine />
             </div>
-            <p className='tabLeft font-choco green' >
-                I consider myself a self-taught programmer with a strong passion for learning and exploring new technologies.
-                <br />
-                <br />
-                I eager to learn, and I learn it fast.
+            <p className='tabLeft font-default ' >
+                <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
+                <span>
+                &nbsp;Creating end-to-end web applications, fulfilling all the necessary requirements for a successful website.
+                </span><br /><br />
+                <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
+                <span>
+                &nbsp;Automating works via Bash / Python scripts and Github Actions
+                </span>
             </p>
 
             <SkillBlock html={block_language} />

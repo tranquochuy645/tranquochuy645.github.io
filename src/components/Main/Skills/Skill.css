@@ -8,7 +8,13 @@
     border: solid white;
     padding: 10px;
     width: calc(90% - 40px);
+    font-size: clamp(15px, 1.5vw, 30px);
 }
+#skills p img{
+    width: 30px;
+    height: 30px;
+}
+
 
 .skills-block{
     margin-top: 5vw;
