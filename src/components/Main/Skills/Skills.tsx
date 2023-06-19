@@ -1,15 +1,27 @@
 import './Skill.css'
 import DecorLine from '../../DecorLine/DecorLine';
+import VisibilitySensor from 'react-visibility-sensor';
+import { useState } from 'react';
 function Skills() {
-
+    const [isVisible1, setIsVisible1] = useState(false);
+    const [isVisible2, setIsVisible2] = useState(false);
+    const handleVisibilityChange1 = (isVisible1: boolean) => {
+        setIsVisible1(isVisible1);
+    };
+    const handleVisibilityChange2 = (isVisible2: boolean) => {
+        setIsVisible2(isVisible2);
+    }
     return (
         <>
             <div className='flex-inline'>
                 <h1 className='tabLeft'>What I do ?&nbsp;&nbsp;&nbsp;</h1>
                 <DecorLine />
             </div>
-            <p className='tabLeft'>I do blablablablablbalabalbalbalbalbalabalbalablabalbalablabalbalbalablabalbalabalbalbalabalbal</p>
-            <div className='skills-block'>
+            <VisibilitySensor onChange={handleVisibilityChange1}>
+
+                <p className={`tabLeft ${isVisible1 || isVisible2 ? 'visible' : ''}`}>I do blablablablablbalabalbalbalbalbalabalbalablabalbalablabalbalbalablabalbalabalbalbalabalbal</p>
+            </VisibilitySensor>
+            <div className={`skills-block ${isVisible1 || isVisible2 ? 'visible' : ''}`}>
                 <h2 className='green'>
                     Programming languages :
                 </h2>
@@ -60,8 +72,9 @@ function Skills() {
                     </figure>
 
                 </div>
+
             </div>
-            <div className='skills-block'>
+            <div className={`skills-block ${isVisible1 || isVisible2 ? 'visible' : ''}`}>
                 <h2 className='green' >
                     Frameworks / Libraries :
                 </h2>
@@ -88,53 +101,56 @@ function Skills() {
                     </figure>
                 </div>
             </div>
-            <div className='skills-block'>
-                <h2  className='green'>
-                    Others :
-                </h2>
-                <div className='flex-wrap'>
-                    <figure>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-                        <figcaption>Linux OS</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg" />
-                        <figcaption>GitHub</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
-                        <figcaption>Docker</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                        <figcaption>Node.js</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/JWT_LOGO.png" />
-                        <figcaption>JWT</figcaption>
-                    </figure>
-                    <figure>
-                        <img className='bg-white' src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" />
-                        <figcaption>AWS</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
-                        <figcaption>MongoDB</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
-                        <figcaption>Firebase</figcaption>
-                    </figure>
-                    <figure>
-                        <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
-                        <figcaption>Unity</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" />
-                        <figcaption>Blender</figcaption>
-                    </figure>
+            <VisibilitySensor onChange={handleVisibilityChange2}>
+                <div className={`skills-block ${isVisible1 || isVisible2 ? 'visible' : ''}`}>
+                    <h2 className='green'>
+                        Others :
+                    </h2>
+                    <div className='flex-wrap'>
+                        <figure>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+                            <figcaption>Linux OS</figcaption>
+                        </figure>
+                        <figure>
+                            <img className='bg-white' src="https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg" />
+                            <figcaption>GitHub</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+                            <figcaption>Docker</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                            <figcaption>Node.js</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/JWT_LOGO.png" />
+                            <figcaption>JWT</figcaption>
+                        </figure>
+                        <figure>
+                            <img className='bg-white' src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" />
+                            <figcaption>AWS</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+                            <figcaption>MongoDB</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+                            <figcaption>Firebase</figcaption>
+                        </figure>
+                        <figure>
+                            <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
+                            <figcaption>Unity</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" />
+                            <figcaption>Blender</figcaption>
+                        </figure>
+                    </div>
                 </div>
-            </div>
+            </VisibilitySensor>
+
         </>
     )
 }

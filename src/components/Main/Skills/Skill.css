@@ -10,7 +10,12 @@
     width: 96%;
     background-image: linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
     box-shadow: 4px 4px 4px black;
+    opacity: 0;
 }
+.skills-block.visible{
+    animation: appear 0.5s ease-out forwards;
+}
+
 .skills-block figure{
     margin-left: 3vw;
 }
@@ -19,6 +24,7 @@
     text-align: center;
 }
 .skills-block img{
+    border-radius: 5px;
     height: 70px;
     width: 70px;
 }
