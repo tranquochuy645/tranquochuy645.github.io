@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Head from './components/Header/Head.tsx';
 import Landing from './components/Main/Landing/Landing.tsx';
-import Projects from  './components/Main/Projects/Projects.tsx';
+import Projects from './components/Main/Projects/Projects.tsx';
 import Skills from './components/Main/Skills/Skills.tsx';
 import Contact from './components/Main/Contact/Contact.tsx';
 import Footer from './components/Footer/Footer.tsx';
@@ -35,10 +35,10 @@ function App() {
     clearTimeout(timer);
     yPos = window.pageYOffset || document.documentElement.scrollTop
     if (yPos > 0) {
-      
+
       document.getElementById("nav-wrapper")?.classList.add("undocked");
       timer = setTimeout(hide, 1000);
-    } else if (!document.getElementById("menu-btn-wrapper")?.classList.contains("opened")){
+    } else if (!document.getElementById("menu-btn-wrapper")?.classList.contains("opened")) {
       document.getElementById("nav-wrapper")?.classList.remove("undocked");
     }
   };
@@ -74,20 +74,20 @@ function App() {
       {showNav && <Head />}
       <main className='font-evil'>
         <section id='landing'>
-          <Landing/>
-        </section>
-        <section id='projects'>
-          <Projects/>
+          <Landing />
         </section>
         <section id='skills'>
-          <Skills/>
+          <Skills />
+        </section>
+        <section id='projects'>
+          <Projects />
         </section>
         <section id='contact'>
-          <Contact/>
+          <Contact />
         </section>
       </main>
-      <Footer/>
-    </> 
+      <Footer />
+    </>
   );
 }
 

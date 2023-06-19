@@ -1,36 +1,8 @@
 import './Landing.css';
 import { useEffect } from 'react';
+import typeParagraph from '../../Functions/typeParagraph';
 
 function Landing() {
-    function typeSentence(e: HTMLElement, t: string, delayEach: number, delayStart: number = 0) {
-        setTimeout(() => {
-            const sentenceSpan = document.createElement('span');
-            e.appendChild(sentenceSpan)
-            const cursor = document.createElement('span');
-            cursor.className = 'cursor';
-            e.appendChild(cursor);
-            for (let i = 0; i < t.length; i++) {
-                setTimeout(() => {
-                    sentenceSpan.textContent += t.charAt(i);
-                    if (i == t.length - 1) {
-                        e.removeChild(cursor);
-                    }
-                }, delayEach * (i + 1))
-            }
-        }, delayStart)
-    }
-    function typeParagraph(e: Array<HTMLElement>, t: Array<string>, delayEach: number, delayStart: number = 0) {
-        setTimeout(() => {
-            let totalTime = 0;
-            for (let i = 0; i < e.length; i++) {
-                typeSentence(e[i], t[i], delayEach, totalTime);
-                totalTime += delayEach * t[i].length;
-            }
-        }, delayStart)
-
-    }
-
-
     useEffect(() => {
         const arrT = [
             "HI, I'M ",
@@ -74,7 +46,7 @@ function Landing() {
                         <span id='t_2'>
 
                         </span>
-                        <a id='t_3' className="green" href="https://hcmute.edu.vn/" aria-label="HCMUTE website">
+                        <a id='t_3' className="green none-decoration-exhov" href="https://hcmute.edu.vn/" aria-label="HCMUTE website">
 
                         </a>
                     </p>

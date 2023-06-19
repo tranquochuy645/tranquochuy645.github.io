@@ -19,14 +19,13 @@ const Head = () => {
                     </svg>
                 </a>
                 <ul id="nav-ul">
-                    <li className='nav-ul-li'><a className="nav-ul-li-a" href="#projects" aria-label="Projects section"><img className="nav-ul-li-a-img" src='/assets/imgs/project.svg' />&nbsp;Projects</a></li>
                     <li className='nav-ul-li'><a className="nav-ul-li-a" href="#skills" aria-label="Skills section"><img className="nav-ul-li-a-img" src='/assets/imgs/tool.svg' />&nbsp;Skills</a></li>
+                    <li className='nav-ul-li '><a className="nav-ul-li-a" href="#projects" aria-label="Projects section"><img className="nav-ul-li-a-img" src='/assets/imgs/project.svg' />&nbsp;Projects</a></li>
                     <li className='nav-ul-li'><a className="nav-ul-li-a" href="#contact" aria-label="Contact section"><img className="nav-ul-li-a-img" src='/assets/imgs/contact.svg' />&nbsp;Contact</a></li>
                 </ul>
             </div>
             <div id='menu-btn-wrapper' onClick={dropDownNav}>
-                <svg  id="menu-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-
+                <svg id="menu-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className='line line2' d="M20 50L81 50" stroke="white" strokeWidth="7" strokeLinejoin="round" />
                     <path className='line line3' d="M20 72.6271H22.0935M22.0935 72.6271H76C76 72.6271 86.0698 75.1272 91 48.6272C99 5.62717 76 27.6271 76 27.6271L22.0935 72.6271Z" stroke="white" strokeWidth="7" strokeLinejoin="round" />
                     <path className="line line1" d="M20 28H22.0935M22.0935 28H76C76 28 86.0698 25.5 91 52C99 95 76 73 76 73L22.0935 28Z" stroke="white" strokeWidth="7" strokeLinejoin="round" />

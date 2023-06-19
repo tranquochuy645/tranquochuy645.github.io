@@ -2,4 +2,19 @@
     display: flex;
     flex-wrap: wrap;
 }
+#checkout-container{
+    border: solid grey;
+    margin-left: calc(50% - 100px);
+    width: 200px;
+    transition: 0.3s;
+}
+#checkout-container:hover{
+    cursor: pointer;
+    transform: translateY(-10%);
+    box-shadow: 4px 4px 4px rgb(94, 94, 94);
+}
+#checkout{
+    text-align: center;
+    text-decoration: none;  
+}
   

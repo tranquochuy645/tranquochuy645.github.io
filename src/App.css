@@ -10,7 +10,15 @@ section {
   padding-top: clamp(70px, 12vw, 140px);
   min-height:100vh;
 }
-
+.none-decoration{
+  text-decoration: none;
+}
+.none-decoration-exhov{
+  text-decoration: none;
+}
+.none-decoration-exhov:hover{
+  text-decoration: underline;
+}
 
 .green {
   color: #4fb420 !important;
@@ -32,7 +40,11 @@ h2{
   height: 2px;
   background-color:white
 }
-
+.flex-inline{
+  display:flex;
+  white-space: nowrap;
+  align-items: center;
+}
 
 @font-face {
   font-family: choco;

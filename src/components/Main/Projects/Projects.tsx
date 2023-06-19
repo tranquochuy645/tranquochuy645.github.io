@@ -35,13 +35,19 @@ function Projects() {
 
     return (
         <>
-            <h1 className='tabLeft'>My Projects</h1>
-            <DecorLine/>
+            <div className='flex-inline'>
+                <h1 className='tabLeft'>My recent projects&nbsp;&nbsp;&nbsp;</h1>
+                <DecorLine />
+            </div>
             <div id="projects-container">
                 {repositories.map((repository) => (
                     <PinnedRepo key={repository.id} repository={repository} />
                 ))}
-                <a href='https://github.com/tranquochuy645'>Checkout my Github</a>
+            </div>
+            <div id='checkout-container'>
+                <a id='checkout' href='https://github.com/tranquochuy645' aria-label='checkout my github'>
+                    <h2 className='green'>Checkout my Github</h2>
+                </a>
             </div>
         </>
     );

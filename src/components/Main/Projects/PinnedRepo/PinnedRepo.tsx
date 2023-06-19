@@ -92,7 +92,7 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({repository }) => {
     <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
       <a  className={`repo-container none-decoration  ${isVisible ? 'visible' : ''}`} href={repository.html_url} aria-label='visit repo'>
         <h2 className='green'>
-          {repository.description}
+         <img className='repo-img' src='/assets/imgs/repo.png' ></img> {repository.description}
         </h2>
         <p className=" white">
           <span>

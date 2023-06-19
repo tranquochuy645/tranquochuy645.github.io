@@ -2,14 +2,13 @@
     padding-left: 4vw;
     padding-right: 4vw;
     width: 100%;
-
 }
 
 #about {
     width: 100vw;
     max-width: 100%;
     background-image: linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
-    box-shadow: 4px 10px 15px 10px rgb(94, 94, 94);
+    box-shadow: 4px 10px 15px 10px rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
 }
@@ -69,21 +68,20 @@
     font-size: clamp(22px,2vw,40px);
     width: clamp(170px,15vw,400px);
     height: clamp(60px,6vw,100px);
-    background-color: rgb(64, 0, 93);
     color:#4fb420;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    border-radius: 6px;
-    border: 1px solid grey;
-    box-shadow: 4px 4px 4px black;
+    border: 1px solid rgb(238, 238, 238);
+    box-shadow: 4px 6px 6px black;
     animation: slide-down 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: 0.3s;
 }
 
 
 #download:hover {
-    background-color: rgb(87, 0, 127);
+    transform: translateY(-20%);
+    box-shadow: 4px 6px 6px rgb(94, 94, 94);
 }
 
 
