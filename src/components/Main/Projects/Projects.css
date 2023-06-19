@@ -11,7 +11,7 @@
 #checkout-container:hover{
     cursor: pointer;
     transform: translateY(-10%);
-    box-shadow: 4px 4px 4px rgb(94, 94, 94);
+    box-shadow: 4px 4px 4px 4px rgb(0, 0, 0);
 }
 #checkout{
     text-align: center;
