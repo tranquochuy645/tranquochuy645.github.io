@@ -142,7 +142,7 @@ const block_other: ReactNode = (
 function SkillBlock({ html }: { html: ReactNode }) {
     return (
         <>
-            <VisibilitySensor partialVisibility={true} offset={{top:100,bottom:100}} >
+            <VisibilitySensor partialVisibility={true} offset={{ top: 100, bottom: 100 }} >
                 {({ isVisible }: { isVisible: boolean }) =>
                 (
                     <div className={`skills-block ${isVisible ? 'visible' : ''}`}>
@@ -160,9 +160,13 @@ function Skills() {
                 <h1 className='tabLeft'>What I do ?&nbsp;&nbsp;&nbsp;</h1>
                 <DecorLine />
             </div>
-            <p className='tabLeft'>
-                I do blablablablablb
+            <p className='tabLeft font-choco green' >
+                I consider myself a self-taught programmer with a strong passion for learning and exploring new technologies.
+                <br />
+                <br />
+                I eager to learn, and I learn it fast.
             </p>
+
             <SkillBlock html={block_language} />
             <SkillBlock html={block_framework} />
             <SkillBlock html={block_other} />
