@@ -11,17 +11,6 @@
         stroke-dashoffset: 0;
     }
 }
-@keyframes appear-2 {
-    from{
-        opacity: 1;
-        transform: scaleX(0);
-    }
-    to{ 
-        opacity: 1;
-        transform: scaleX(1);
-    }
-}
-
 
 @keyframes appear {
     0% {

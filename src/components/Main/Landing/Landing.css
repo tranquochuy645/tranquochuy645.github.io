@@ -80,8 +80,8 @@
 
 
 #download:hover {
-    transform: translateY(-20%);
-    box-shadow: 4px 6px 6px rgb(94, 94, 94);
+    transform: scale(1.03);
+    box-shadow: 1px 3px 6px 6px rgb(47, 47, 47);
 }
 
 

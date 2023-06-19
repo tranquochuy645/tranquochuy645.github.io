@@ -15,9 +15,8 @@ interface Repository {
 }
 
 interface PinnedRepoProps {
-  key:number;
+  key: number;
   repository: Repository;
-
 }
 
 const getLanguageIcon = (language: string) => {
@@ -33,6 +32,9 @@ const getLanguageIcon = (language: string) => {
       break;
     case 'c#':
       iconName = 'csharp';
+      break;
+    case 'c++':
+      iconName = 'cplusplus';
       break;
     default:
       iconName = lowercasedLanguage;
@@ -65,13 +67,9 @@ const formatTimestamp = (timestamp: string) => {
   return date.toLocaleString();
 };
 
-const PinnedRepo: React.FC<PinnedRepoProps> = ({repository }) => {
+const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
   const [commitCount, setCommitCount] = useState<string>("0");
   const created_time = formatTimestamp(repository.created_at);
-  const [isVisible, setIsVisible] = useState(false); // Track visibility state
-  const handleVisibilityChange = (isVisible: boolean) => {
-    setIsVisible(isVisible);
-  };
   useEffect(() => {
     getCommitCount(repository.commits_url)
       .then((count) => {
@@ -89,37 +87,38 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({repository }) => {
   const languageIcon = getLanguageIcon(repository.language);
 
   return (
-    <VisibilitySensor partialVisibility onChange={handleVisibilityChange}>
-      <a  className={`repo-container none-decoration  ${isVisible ? 'visible' : ''}`} href={repository.html_url} aria-label='visit repo'>
-        <h2 className='green'>
-         <img className='repo-img' src='/assets/imgs/repo.png' ></img> {repository.description}
-        </h2>
-        <p className=" white">
-          <span>
-            {languageIcon}&nbsp;&nbsp;&nbsp;{repository.language}&nbsp;&nbsp;&nbsp;&nbsp;
-          </span>
-          <span>
-            {repository.stargazers_count}&nbsp;
-            <img className="icon" src="/assets/imgs/star.svg"></img>&nbsp;&nbsp;&nbsp;&nbsp;
-          </span>
-          <span>
-            {repository.forks_count}&nbsp;
-            <img className="icon" src="/assets/imgs/fork.svg"></img>&nbsp;&nbsp;&nbsp;&nbsp;
-          </span>
-          <span>
-            {commitCount}&nbsp;commits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </span>
-          <span>
-            {displaySize}
-          </span>
-        </p>
-        <p className=" white font-default">Created at {created_time}</p>
-        <p className=" white font-default"> {repository.topics.map((item,index) => {
-          return <span key={repository.created_at+index}>
-             &nbsp;#{item}</span>//unique keys
-        })}</p>
-
-      </a>
+    <VisibilitySensor partialVisibility={true} offset={{top:100,bottom:100}} >
+      {({ isVisible }: { isVisible: boolean }) =>
+        <a className={`repo-container none-decoration  ${isVisible ? 'visible' : ''}`} href={repository.html_url} aria-label='visit repo'>
+          <h2 className='green'>
+            <img className='repo-img' src='/assets/imgs/repo.png' ></img> {repository.description}
+          </h2>
+          <p className=" white">
+            <span>
+              {languageIcon}&nbsp;&nbsp;&nbsp;{repository.language}&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+              {repository.stargazers_count}&nbsp;
+              <img className="icon" src="/assets/imgs/star.svg"></img>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+              {repository.forks_count}&nbsp;
+              <img className="icon" src="/assets/imgs/fork.svg"></img>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+              {commitCount}&nbsp;commits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+              {displaySize}
+            </span>
+          </p>
+          <p className=" white font-default">Created at {created_time}</p>
+          <p className=" white font-default"> {repository.topics.map((item, index) => {
+            return <span key={repository.created_at + index}>
+              &nbsp;#{item}</span>//unique keys
+          })}</p>
+        </a>
+      }
     </VisibilitySensor>
   );
 };
