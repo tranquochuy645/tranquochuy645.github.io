@@ -4,6 +4,11 @@ body{
 }
 
 section {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+  overflow-x: hidden;
   box-sizing: border-box;
   padding-top: clamp(70px, 12vw, 140px);
   min-height:100vh;
