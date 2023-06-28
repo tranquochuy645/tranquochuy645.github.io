@@ -157,17 +157,22 @@ function Skills() {
     return (
         <>
             <div className='flex-inline'>
-                <h1 className='tabLeft'>What I do ?&nbsp;&nbsp;&nbsp;</h1>
+                <h1 className='tabLeft green'>What I do ?&nbsp;&nbsp;&nbsp;</h1>
                 <DecorLine />
             </div>
-            <p className='tabLeft font-default ' >
+            <p id="skill-sum" className='tabLeft' >
                 <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
                 <span>
                 &nbsp;Creating end-to-end web applications, fulfilling all the necessary requirements for a successful website.
                 </span><br /><br />
                 <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
                 <span>
-                &nbsp;Automating works via Bash / Python scripts and Github Actions
+                &nbsp;Automating works via Bash / Python scripts and other CI/CD tools
+                </span>
+                <br /><br />
+                <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
+                <span>
+                &nbsp;Developing software for embedded systems and microcontrollers
                 </span>
             </p>
 

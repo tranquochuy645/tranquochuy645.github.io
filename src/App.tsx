@@ -72,7 +72,7 @@ function App() {
   return (
     <>
       {showNav && <Head />}
-      <main className='font-evil'>
+      <main className='white' >
         <section id='landing'>
           <Landing />
         </section>

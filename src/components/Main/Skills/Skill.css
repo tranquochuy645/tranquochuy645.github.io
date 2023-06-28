@@ -3,14 +3,14 @@
     flex-direction: column;
     justify-content: space-between;
 }
-#skills p{
+#skill-sum{
     align-self: center;
     border: solid white;
     padding: 10px;
     width: calc(90% - 40px);
-    font-size: clamp(15px, 1.5vw, 30px);
+    font-size: clamp(15px, 1vw, 30px);
 }
-#skills p img{
+#skill-sum img{
     width: 30px;
     height: 30px;
 }
@@ -35,10 +35,6 @@
 
 .skills-block figure{
     margin-left: 3vw;
-}
-.skills-block figcaption{
-    margin-top: 5px;
-    text-align: center;
 }
 .skills-block img{
     padding: 2px;

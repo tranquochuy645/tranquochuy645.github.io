@@ -6,6 +6,7 @@
 
 #about {
     width: 100vw;
+    min-height: calc(100vh - 220px);
     max-width: 100%;
     background-image: linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
     box-shadow: 4px 10px 15px 10px rgb(0, 0, 0);
@@ -36,7 +37,7 @@
     height: clamp(200px, 20vw, 400px);
 }
 
-#about-span-1 * {
+#about-span-1>*{
     opacity: 0;
     animation: appear 1s forwards;
     animation-delay: 2s;
@@ -50,7 +51,6 @@
 
 #about-span-2 p {
     font-size: clamp(15px, 1.5vw, 30px);
-    
 }
 
 .cursor {

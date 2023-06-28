@@ -1,6 +1,6 @@
 import './Landing.css';
 import { useEffect } from 'react';
-import typeParagraph from '../../Functions/typeParagraph';
+import { typeParagraph } from '../../../lib/typeParagraph';
 
 function Landing() {
     useEffect(() => {
@@ -36,6 +36,8 @@ function Landing() {
                     <img id="profile-img" src="/assets/imgs/profile.jpeg" alt="profile picture" />
                     <h2>Tran Quoc Huy</h2>
                     <p>Student</p>
+                    <p>&#x1F4EB;&nbsp;&nbsp;tranquochuy645@gmail.com</p>
+                    <p><i className="devicon-github-original"></i>&nbsp;&nbsp; github.com/tranquochuy645</p>
                 </span>
                 <span id="about-span-2" className='about-span'>
                     <h1>
@@ -58,7 +60,7 @@ function Landing() {
 
                         </span>
                     </p>
-                    <a id="download" href="/assets/cv.pdf" >SEE MY RESUME</a>
+                    <a id="download" className="font-evil" href="/assets/cv.pdf" aria-label='see my resume'>SEE MY RESUME</a>
                 </span>
             </div>
         </>

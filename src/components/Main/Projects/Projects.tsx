@@ -36,7 +36,7 @@ function Projects() {
     return (
         <>
             <div className='flex-inline'>
-                <h1 className='tabLeft'>My recent projects&nbsp;&nbsp;&nbsp;</h1>
+                <h1 className='tabLeft green'>My recent projects&nbsp;&nbsp;&nbsp;</h1>
                 <DecorLine />
             </div>
             <div id="projects-container">

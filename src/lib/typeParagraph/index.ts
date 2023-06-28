@@ -1,5 +1,5 @@
-function typeParagraph(e: Array<HTMLElement>, t: Array<string>, delayEach: number, delayStart: number = 0) {
-    function typeSentence(e: HTMLElement, t: string, delayEach: number, delayStart: number = 0) {
+const typeParagraph = (e: Array<HTMLElement>, t: Array<string>, delayEach: number, delayStart: number = 0) => {
+    const typeSentence = (e: HTMLElement, t: string, delayEach: number, delayStart: number = 0) => {
         setTimeout(() => {
             const sentenceSpan = document.createElement('span');
             e.appendChild(sentenceSpan)
@@ -25,4 +25,6 @@ function typeParagraph(e: Array<HTMLElement>, t: Array<string>, delayEach: numbe
     }, delayStart)
 
 }
-export default typeParagraph
+export {
+    typeParagraph
+}

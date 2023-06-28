@@ -2,9 +2,7 @@ body{
   padding: 0;
   margin: 0;
 }
-main {
-  color: white;
-}
+
 section {
   box-sizing: border-box;
   padding-top: clamp(70px, 12vw, 140px);
@@ -21,7 +19,7 @@ section {
 }
 
 .green {
-  color: #4fb420 !important;
+  color: #70ff2d !important;
 }
 .white{
   color: white;
@@ -30,10 +28,22 @@ section {
   padding-left: 4vw;
 }
 h1{
+  font-family: evil, Arial, Helvetica, sans-serif;
   font-size: xx-large;
 }
 h2{
+  font-family: evil, Arial, Helvetica, sans-serif;
   font-size: large;
+}
+p{
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+figcaption{
+  margin-top: 5px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
 }
 
 .flex-inline{
@@ -42,27 +52,15 @@ h2{
   align-items: center;
 }
 
-@font-face {
-  font-family: choco;
-  src: url("/assets/fonts/chocopy-font/Chocopy-ownMB.ttf");
-}
-@font-face {
-  font-family: pixel;
-  src: url("/assets/fonts/public-pixel-font/PublicPixel-z84yD.ttf");
-}
+
 @font-face {
   font-family: evil;
   src: url("/assets/fonts/evil-empire-font/EvilEmpire-4BBVK.ttf");
 }
-.font-pixel{
-  font-family: pixel;
-}
-.font-choco{
-  font-family: choco;
-}
+
+
+
 .font-evil{
   font-family: evil;
 }
-.font-default{
-  font-family: Arial, Helvetica, sans-serif;
-}
+

@@ -3,8 +3,8 @@ import DecorLine from '../../DecorLine/DecorLine';
 function Contact() {
     return (
         <>
-            <div className='flex-inline'>
-                <h1 className='tabLeft'>Reach out to me !&nbsp;&nbsp;&nbsp;</h1>
+            <div className='flex-inline '>
+                <h1 className='tabLeft green'>Reach out to me !&nbsp;&nbsp;&nbsp;</h1>
                 <DecorLine />
             </div>
             <p>
