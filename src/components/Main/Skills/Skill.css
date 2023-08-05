@@ -22,7 +22,6 @@
     margin-bottom: 2vh;
     padding: 10px;
     align-self: center;
-    background-image: linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
     box-shadow: 1px 4px 4px 4px black;
     opacity: 0;
     transition: 1s;
@@ -47,7 +46,4 @@
 .flex-wrap{
     display: flex;
     flex-wrap: wrap;
-}
-.bg-white{
-    background-color: rgb(255, 255, 255);
 }

@@ -19,8 +19,8 @@ interface PinnedRepoProps {
   repository: Repository;
 }
 
-const getLanguageIcon = (language: string) => {
-  const lowercasedLanguage = language.toLowerCase();
+const getLanguageIcon = (language: string | undefined) => {
+  const lowercasedLanguage = language?.toLowerCase() || "";
   let iconName = '';
 
   switch (lowercasedLanguage) {
@@ -87,9 +87,9 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
   const languageIcon = getLanguageIcon(repository.language);
 
   return (
-    <VisibilitySensor partialVisibility={true} offset={{top:100,bottom:100}} >
+    <VisibilitySensor partialVisibility={true} offset={{ top: 100, bottom: 100 }} >
       {({ isVisible }: { isVisible: boolean }) =>
-        <a className={`repo-container none-decoration  ${isVisible ? 'visible' : ''}`} href={repository.html_url} aria-label='visit repo'>
+        <a className={`repo-container floating-bg none-decoration  ${isVisible ? 'visible' : ''}`} href={repository.html_url} aria-label='visit repo'>
           <h2 className='green'>
             <img className='repo-img' src='/assets/imgs/repo.png' ></img> {repository.description}
           </h2>

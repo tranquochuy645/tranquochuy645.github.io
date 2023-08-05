@@ -3,7 +3,7 @@ export default function Footer() {
     return (
         <footer>
             <h3>
-                All rights reserved &copy; T.Q.Huy {new Date().getFullYear()}
+                &copy; T.Q.Huy 2023
             </h3>
         </footer>
     )

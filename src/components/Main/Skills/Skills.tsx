@@ -49,10 +49,6 @@ const block_language: ReactNode = (
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" />
                 <figcaption>Dart</figcaption>
             </figure>
-            <figure>
-                <img src="/assets/imgs/asm.svg" />
-                <figcaption>Assembly</figcaption>
-            </figure>
 
         </div>
     </>
@@ -72,16 +68,16 @@ const block_framework: ReactNode = (
                 <figcaption>ExpressJS</figcaption>
             </figure>
             <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" />
+                <figcaption>Vite</figcaption>
+            </figure>
+            <figure>
                 <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" />
                 <figcaption>Socket-io</figcaption>
             </figure>
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
                 <figcaption>Arduino</figcaption>
-            </figure>
-            <figure>
-                <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
-                <figcaption>Next.js</figcaption>
             </figure>
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
@@ -113,10 +109,6 @@ const block_other: ReactNode = (
                 <figcaption>Node.js</figcaption>
             </figure>
             <figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/JWT_LOGO.png" />
-                <figcaption>JWT</figcaption>
-            </figure>
-            <figure>
                 <img className='bg-white' src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" />
                 <figcaption>AWS</figcaption>
             </figure>
@@ -136,6 +128,15 @@ const block_other: ReactNode = (
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" />
                 <figcaption>Blender</figcaption>
             </figure>
+
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/JWT_LOGO.png" />
+                <figcaption>JWT</figcaption>
+            </figure>
+            <figure>
+                <img src="https://webrtc.github.io/webrtc-org/assets/images/webrtc-logo-vert-retro-dist.svg" />
+                <figcaption>WebRTC</figcaption>
+            </figure>
         </div>
     </>
 )
@@ -145,7 +146,7 @@ function SkillBlock({ html }: { html: ReactNode }) {
             <VisibilitySensor partialVisibility={true} offset={{ top: 100, bottom: 100 }} >
                 {({ isVisible }: { isVisible: boolean }) =>
                 (
-                    <div className={`skills-block ${isVisible ? 'visible' : ''}`}>
+                    <div className={`skills-block floating-bg ${isVisible ? 'visible' : ''}`}>
                         {html}
                     </div>
                 )}
@@ -163,16 +164,16 @@ function Skills() {
             <p id="skill-sum" className='tabLeft' >
                 <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
                 <span>
-                &nbsp;Creating end-to-end web applications, fulfilling all the necessary requirements for a successful website.
+                    &nbsp;Creating end-to-end web applications, fulfilling all the necessary requirements for a successful website.
                 </span><br /><br />
                 <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
                 <span>
-                &nbsp;Automating works via Bash / Python scripts and other CI/CD tools
+                    &nbsp;Automating works via Bash / Python scripts and other CI/CD tools
                 </span>
                 <br /><br />
                 <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
                 <span>
-                &nbsp;Developing software for embedded systems and microcontrollers
+                    &nbsp;Developing software for embedded systems and microcontrollers
                 </span>
             </p>
 

@@ -31,7 +31,7 @@ function Landing() {
     }, [])
     return (
         <>
-            <div id='about'>
+            <div id='about' className='floating-bg'>
                 <span id="about-span-1" className='about-span'>
                     <img id="profile-img" src="/assets/imgs/profile.jpeg" alt="profile picture" />
                     <h2>Tran Quoc Huy</h2>
