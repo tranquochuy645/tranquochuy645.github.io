@@ -33,7 +33,7 @@ function Landing() {
         <>
             <div id='about' className='floating-bg'>
                 <span id="about-span-1" className='about-span'>
-                    <img id="profile-img" src="/assets/imgs/profile.jpeg" alt="profile picture" />
+                    <img id="profile-img" src="/assets/imgs/profile.jpg" alt="profile picture" />
                     <h2>Tran Quoc Huy</h2>
                     <p>Student</p>
                     <p>&#x1F4EB;&nbsp;&nbsp;tranquochuy645@gmail.com</p>

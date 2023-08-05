@@ -28,6 +28,7 @@
 #profile-img {
     width: clamp(200px, 20vw, 400px);
     height: clamp(200px, 20vw, 400px);
+    object-fit: cover; /* Maintain aspect ratio and crop the image */
 }
 
 #about-span-1>*{
@@ -35,7 +36,7 @@
     animation: appear 1s forwards;
     animation-delay: 2s;
     margin-left: calc(50% - 100px);
-    border-radius: 30%;
+    border-radius: 10%;
 }
 
 #about-span-2 h1 {
