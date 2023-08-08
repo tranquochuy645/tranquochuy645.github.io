@@ -1,28 +1,7 @@
 import './Contact.css';
-import { useEffect, useState } from 'react';
 import DecorLine from '../../DecorLine/DecorLine';
 
 function Contact() {
-    const [readmeContent, setReadmeContent] = useState('');
-    useEffect(() => {
-        const fetchReadme = async () => {
-            try {
-                const response = await fetch(
-                    'https://api.github.com/repos/tranquochuy645/tranquochuy645/contents/README.md'
-                );
-
-                const data = await response.json();
-
-                // Decode the base64 content
-                const decodedContent = atob(data.content);
-
-                setReadmeContent(decodedContent);
-            } catch (error) {
-                console.error('Error fetching README:', error);
-            }
-        };
-        fetchReadme();
-    }, []);
     return (
         <>
             <div className='flex-inline'>
@@ -52,13 +31,11 @@ function Contact() {
                             </a>
                             <p>https://github.com/tranquochuy645</p>
                         </div>
-                        <p>{readmeContent}</p>
                         <img id="contribution-chart" src="https://ghchart.rshah.org/39BD00/tranquochuy645" alt="Huy's contributions this year"></img>
                     </div>
                     <img id="prefered-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=tranquochuy645&langs_count=8&layout=donut&hide_border=true&bg_color=00000000&title_color=70ff2d&text_color=fff" />
                 </div>
                 <DecorLine />
-
             </div>
         </>
     );
