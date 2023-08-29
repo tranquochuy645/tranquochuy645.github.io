@@ -97,6 +97,10 @@ const block_other: ReactNode = (
                 <figcaption>Linux OS</figcaption>
             </figure>
             <figure>
+                <img src="https://www.cdnlogo.com/logos/p/20/postman.svg" />
+                <figcaption>Postman</figcaption>
+            </figure>
+            <figure>
                 <img className='bg-white' src="https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg" />
                 <figcaption>GitHub</figcaption>
             </figure>
