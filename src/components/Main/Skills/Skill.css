@@ -34,8 +34,9 @@
 }
 
 .skills-block figure{
-    margin-left: 3vw;
+    margin: auto;
 }
+
 .skills-block img{
     padding: 2px;
     border-radius: 5px;
@@ -46,4 +47,5 @@
 .flex-wrap{
     display: flex;
     flex-wrap: wrap;
+    
 }

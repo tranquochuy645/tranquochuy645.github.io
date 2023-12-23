@@ -10,8 +10,8 @@ const block_language: ReactNode = (
         </h2>
         <div className='flex-wrap'>
             <figure>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <figcaption>Javascript</figcaption>
+                <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+                <figcaption>Java</figcaption>
             </figure>
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
@@ -44,6 +44,10 @@ const block_language: ReactNode = (
             <figure>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" />
                 <figcaption>Bash</figcaption>
+            </figure>
+            <figure>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                <figcaption>Javascript</figcaption>
             </figure>
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" />
@@ -89,7 +93,7 @@ const block_framework: ReactNode = (
 const block_other: ReactNode = (
     <>
         <h2 className='green'>
-            Others :
+            Others:
         </h2>
         <div className='flex-wrap'>
             <figure>
@@ -102,11 +106,15 @@ const block_other: ReactNode = (
             </figure>
             <figure>
                 <img className='bg-white' src="https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg" />
-                <figcaption>GitHub</figcaption>
+                <figcaption>Github CI</figcaption>
             </figure>
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
                 <figcaption>Docker</figcaption>
+            </figure>
+            <figure>
+                <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" />
+                <figcaption>Nginx</figcaption>
             </figure>
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
@@ -128,11 +136,6 @@ const block_other: ReactNode = (
                 <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
                 <figcaption>Unity</figcaption>
             </figure>
-            <figure>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" />
-                <figcaption>Blender</figcaption>
-            </figure>
-
             <figure>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/JWT_LOGO.png" />
                 <figcaption>JWT</figcaption>
