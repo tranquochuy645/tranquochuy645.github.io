@@ -6,7 +6,7 @@ const Head = () => {
         document.getElementById("nav-ul")?.classList.toggle("opened");
     }
     return (
-        <header id="nav-wrapper" className='font-evil'>
+        <header id="nav-wrapper" >
             <div id="nav-div-1" >
                 <a id="nav-div-1-a" href="#landing" aria-label="Landing section">
                     <svg id="logo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox='0 0 70 80'>
@@ -18,10 +18,10 @@ const Head = () => {
                         </g>
                     </svg>
                 </a>
-                <ul id="nav-ul">
-                    <li className='nav-ul-li'><a className="nav-ul-li-a" href="#skills" aria-label="Skills section"><img className="nav-ul-li-a-img" src='/assets/imgs/tool.svg' />&nbsp;Skills</a></li>
-                    <li className='nav-ul-li '><a className="nav-ul-li-a" href="#projects" aria-label="Projects section"><img className="nav-ul-li-a-img" src='/assets/imgs/project.svg' />&nbsp;Projects</a></li>
-                    <li className='nav-ul-li'><a className="nav-ul-li-a" href="#contact" aria-label="Contact section"><img className="nav-ul-li-a-img" src='/assets/imgs/contact.svg' />&nbsp;Contact</a></li>
+                <ul id="nav-ul" >
+                    <li className='nav-ul-li'><a className="nav-ul-li-a font-evil" href="#skills" aria-label="Skills section"><img className="nav-ul-li-a-img" src='/assets/imgs/tool.svg' />&nbsp;Skills</a></li>
+                    <li className='nav-ul-li '><a className="nav-ul-li-a font-evil" href="#projects" aria-label="Projects section"><img className="nav-ul-li-a-img" src='/assets/imgs/project.svg' />&nbsp;Projects</a></li>
+                    <li className='nav-ul-li'><a className="nav-ul-li-a font-evil" href="#contact" aria-label="Contact section"><img className="nav-ul-li-a-img" src='/assets/imgs/contact.svg' />&nbsp;Contact</a></li>
                 </ul>
             </div>
             <div id='menu-btn-wrapper' onClick={dropDownNav}>
