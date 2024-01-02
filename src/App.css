@@ -41,7 +41,7 @@ h2{
   font-family: evil, Arial, Helvetica, sans-serif;
   font-size: large;
 }
-p{
+p,a{
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -70,3 +70,18 @@ figcaption{
   font-family: evil;
 }
 
+
+.cpy-clipboard{
+  margin-left: 5px;
+  width: 15px;
+  height: 20px;
+  opacity: 0.7;
+  border-radius: 20%;
+
+}
+.cpy-clipboard:hover{
+  opacity: 1;
+}
+.cpy-clipboard:active{
+  background-color: #ffffff69;
+}

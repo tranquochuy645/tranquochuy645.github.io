@@ -10,12 +10,12 @@ const block_language: ReactNode = (
         </h2>
         <div className='flex-wrap'>
             <figure>
-                <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-                <figcaption>Java</figcaption>
-            </figure>
-            <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
                 <figcaption>Typescript</figcaption>
+            </figure>
+            <figure>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                <figcaption>Javascript</figcaption>
             </figure>
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
@@ -28,6 +28,10 @@ const block_language: ReactNode = (
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                 <figcaption>HTML 5</figcaption>
+            </figure>
+            <figure>
+                <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+                <figcaption>Java</figcaption>
             </figure>
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
@@ -45,24 +49,20 @@ const block_language: ReactNode = (
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" />
                 <figcaption>Bash</figcaption>
             </figure>
-            <figure>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <figcaption>Javascript</figcaption>
-            </figure>
-            <figure>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" />
-                <figcaption>Dart</figcaption>
-            </figure>
 
         </div>
     </>
 )
-const block_framework: ReactNode = (
+const block_tech: ReactNode = (
     <>
         <h2 className='green' >
-            Frameworks / Libraries :
+            Technologies:
         </h2>
         <div className='flex-wrap'>
+            <figure>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                <figcaption>Node.js</figcaption>
+            </figure>
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                 <figcaption>React</figcaption>
@@ -80,12 +80,16 @@ const block_framework: ReactNode = (
                 <figcaption>Socket-io</figcaption>
             </figure>
             <figure>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
-                <figcaption>Arduino</figcaption>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/JWT_LOGO.png" />
+                <figcaption>JWT</figcaption>
             </figure>
             <figure>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
-                <figcaption>Flutter</figcaption>
+                <img src="https://webrtc.github.io/webrtc-org/assets/images/webrtc-logo-vert-retro-dist.svg" />
+                <figcaption>WebRTC</figcaption>
+            </figure>
+            <figure>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"  />
+                <figcaption>Git</figcaption>
             </figure>
         </div>
     </>
@@ -106,7 +110,7 @@ const block_other: ReactNode = (
             </figure>
             <figure>
                 <img className='bg-white' src="https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg" />
-                <figcaption>Github CI</figcaption>
+                <figcaption>GH Actions</figcaption>
             </figure>
             <figure>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
@@ -115,10 +119,6 @@ const block_other: ReactNode = (
             <figure>
                 <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" />
                 <figcaption>Nginx</figcaption>
-            </figure>
-            <figure>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                <figcaption>Node.js</figcaption>
             </figure>
             <figure>
                 <img className='bg-white' src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" />
@@ -133,16 +133,16 @@ const block_other: ReactNode = (
                 <figcaption>Firebase</figcaption>
             </figure>
             <figure>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
+                <figcaption>Android</figcaption>
+            </figure>
+            <figure>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
+                <figcaption>Arduino</figcaption>
+            </figure>
+            <figure>
                 <img className='bg-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
                 <figcaption>Unity</figcaption>
-            </figure>
-            <figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/JWT_LOGO.png" />
-                <figcaption>JWT</figcaption>
-            </figure>
-            <figure>
-                <img src="https://webrtc.github.io/webrtc-org/assets/images/webrtc-logo-vert-retro-dist.svg" />
-                <figcaption>WebRTC</figcaption>
             </figure>
         </div>
     </>
@@ -169,23 +169,25 @@ function Skills() {
                 <DecorLine />
             </div>
             <p id="skill-sum" className='tabLeft' >
+
                 <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
                 <span>
-                    &nbsp;Creating end-to-end web applications, fulfilling all the necessary requirements for a successful website.
-                </span><br /><br />
-                <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
-                <span>
-                    &nbsp;Automating works via Bash / Python scripts and other CI/CD tools
+                    &nbsp;I engage in a lot of coding, primarily working with TypeScript.
                 </span>
                 <br /><br />
                 <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
                 <span>
-                    &nbsp;Developing software for embedded systems and microcontrollers
+                    &nbsp;I have familiarity with the processes involved in web development, as well as proficiency in Linux OS, network administration, and system management.
+                </span>
+                <br /><br />
+                <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
+                <span>
+                    &nbsp;Currently, I am delving into basic DevOps and ☁️ cloud architecture.
                 </span>
             </p>
 
             <SkillBlock html={block_language} />
-            <SkillBlock html={block_framework} />
+            <SkillBlock html={block_tech} />
             <SkillBlock html={block_other} />
         </>
     )

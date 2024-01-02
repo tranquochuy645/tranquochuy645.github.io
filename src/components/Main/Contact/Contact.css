@@ -4,8 +4,12 @@
     box-shadow: 4px 6px 10px 6px rgb(0, 0, 0);
 
 }
-
-.contact_info p {
+#contact_info_basic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact_block p {
     margin: 10px;
 }
 

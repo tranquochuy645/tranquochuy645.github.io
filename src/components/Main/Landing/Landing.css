@@ -17,6 +17,10 @@
 #about-span-1 {
     width: 30%;
 }
+#about-span-1 p{
+ display: flex;
+}
+
 
 #about-span-2 {
     width: 70%;

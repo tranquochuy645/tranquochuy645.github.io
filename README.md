@@ -1,3 +1,4 @@
-#  My portfolio built with ReactJS 
-# In progress ...
-## https://tranquochuy645.github.io/
+# My portfolio built with ReactJS 
+## It's not done yet ... :)
+
+Available here: https://tranquochuy645.github.io/
