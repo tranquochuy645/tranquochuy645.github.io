@@ -177,7 +177,7 @@ function Skills() {
                 <br /><br />
                 <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
                 <span>
-                    &nbsp;I have familiarity with the processes involved in web development, as well as proficiency in Linux OS, network administration, and system management.
+                    &nbsp;I have familiarity with the processes involved in web development, as well as proficiency in Linux OS and network administration.
                 </span>
                 <br /><br />
                 <img alt="⚡" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png" />
