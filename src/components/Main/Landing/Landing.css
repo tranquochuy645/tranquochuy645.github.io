@@ -16,9 +16,16 @@
 
 #about-span-1 {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
-#about-span-1 p{
- display: flex;
+
+#about-span-1 p {
+    word-break: break-all;
+    white-space: normal;
+    display: flex;
 }
 
 
@@ -32,14 +39,15 @@
 #profile-img {
     width: clamp(200px, 20vw, 400px);
     height: clamp(200px, 20vw, 400px);
-    object-fit: cover; /* Maintain aspect ratio and crop the image */
+    object-fit: cover;
+    /* Maintain aspect ratio and crop the image */
 }
 
-#about-span-1>*{
+#about-span-1>* {
     opacity: 0;
     animation: appear 1s forwards;
     animation-delay: 2s;
-    margin-left: calc(50% - 100px);
+    /* width: 100%; */
     border-radius: 10%;
 }
 
@@ -61,11 +69,11 @@
 
 #download {
     display: none;
-    margin-top:10vh;
+    margin-top: 10vh;
     align-self: center;
-    font-size: clamp(22px,2vw,40px);
-    width: clamp(170px,15vw,400px);
-    height: clamp(60px,6vw,100px);
+    font-size: clamp(22px, 2vw, 40px);
+    width: clamp(170px, 15vw, 400px);
+    height: clamp(60px, 6vw, 100px);
     align-items: center;
     justify-content: center;
     text-decoration: none;

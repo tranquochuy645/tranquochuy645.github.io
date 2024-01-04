@@ -42,11 +42,10 @@ h2{
   font-size: large;
 }
 p,a{
-  word-break: break-all;
-  white-space: normal;
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 figcaption{
   margin-top: 5px;
   text-align: center;

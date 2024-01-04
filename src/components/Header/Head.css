@@ -73,7 +73,7 @@
 }
 
 .nav-ul-li-a {
-    width: 100%;
+    width: max-content;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -146,6 +146,11 @@
         justify-content: center;
     }
 
+    #nav-div-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
     #menu-svg {
         height: clamp(60px, 7vw, 120px);
         width: clamp(60px, 7vw, 120px);
@@ -154,6 +159,7 @@
     #nav-ul.opened {
         display: flex;
         flex-direction: column;
+        width: max-content;
     }
 
 }

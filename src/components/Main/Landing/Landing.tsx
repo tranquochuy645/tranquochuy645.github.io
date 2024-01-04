@@ -9,7 +9,7 @@ function Landing() {
             "HUY",
             "I will be graduating in 2024 with a major in Embedded Systems and IoT from ",
             "HCMC University of Technology and Education",
-            "Starting with my educational background in Embedded Systems and IoT, I have cultivated a strong understanding of web development. This journey is driven by my aspiration to become a ",
+            "My academic journey commenced with a focus on network and hardware aspects inherent to embedded systems. However, as my passion for web development blossomed, I transitioned and dedicated myself to acquiring the necessary skills in this domain. This pivot reflects my profound interest in web development, and I have set my career sights on becoming a ",
             "Back-end Developer"
         ]
         const arrTTotalLength = arrT.reduce((accumulator, currentValue) => accumulator + currentValue.length, 0);
