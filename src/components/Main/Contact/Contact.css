@@ -4,11 +4,13 @@
     box-shadow: 4px 6px 10px 6px rgb(0, 0, 0);
 
 }
-#contact_info_basic{
+
+#contact_info_basic {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .contact_block p {
     margin: 10px;
 }
@@ -22,7 +24,7 @@
 }
 
 .contact_block {
-    box-sizing: border-box;
+    max-width: 60%;
     padding: 30px;
     display: flex;
 }
@@ -39,7 +41,7 @@
     width: 60%;
 }
 
-#gh_left>p{
+#gh_left>p {
     width: calc(100% - 40px);
     margin-left: 40px;
 }
