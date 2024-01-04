@@ -42,9 +42,11 @@ html {
   overflow-x: auto;
 }
 
+
 .floating-bg {
   background-image: linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));
 }
-.bg-white{
+
+.bg-white {
   background-color: rgb(255, 255, 255);
 }
