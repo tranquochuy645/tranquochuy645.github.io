@@ -6,15 +6,16 @@ import Projects from './components/Main/Projects/Projects.tsx';
 import Skills from './components/Main/Skills/Skills.tsx';
 import Contact from './components/Main/Contact/Contact.tsx';
 import Footer from './components/Footer/Footer.tsx';
+let shouldShowNav = true;
+let yPos = window.pageYOffset || document.documentElement.scrollTop;
+let timer: any;
+
 function App() {
   const [showNav, setShowNav] = useState(true);
-  let yPos = window.pageYOffset || document.documentElement.scrollTop;
-  let shouldShowNav = true;
   const show = () => {
     shouldShowNav = true;
     document.getElementById("nav-wrapper")?.classList.remove("slide-up");
     setShowNav(shouldShowNav);
-
   }
   const hide = () => {
     if (document.getElementById("menu-btn-wrapper")?.classList.contains("opened")) {
@@ -28,32 +29,29 @@ function App() {
       }, 600);
     }
   }
-  let timer: any;
   const handleScroll = () => {
-
     show();
     clearTimeout(timer);
     yPos = window.pageYOffset || document.documentElement.scrollTop
     if (yPos > 0) {
-
-      document.getElementById("nav-wrapper")?.classList.add("undocked");
       timer = setTimeout(hide, 1000);
+      document.getElementById("nav-wrapper")?.classList.add("undocked");
     } else if (!document.getElementById("menu-btn-wrapper")?.classList.contains("opened")) {
       document.getElementById("nav-wrapper")?.classList.remove("undocked");
     }
+
   };
   const handleMouseMove = (e: MouseEvent) => {
     if (e.clientY < 130) {
       document.getElementById("nav-wrapper")?.classList.add("undocked");
+      clearTimeout(timer);
       show();
     } else {
       if (!document.getElementById("menu-btn-wrapper")?.classList.contains("opened")) {
         document.getElementById("nav-wrapper")?.classList.remove("undocked");
       }
 
-      if (yPos > 0
-        && shouldShowNav == true
-      ) {
+      if (yPos > 0&& shouldShowNav ) {
         hide();
       }
     }

@@ -1,6 +1,7 @@
 body{
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 section {
@@ -33,24 +34,21 @@ section {
 .tabLeft{
   padding-left: 4vw;
 }
+
+
 h1{
-  font-family: evil, Arial, Helvetica, sans-serif;
   font-size: xx-large;
 }
 h2{
-  font-family: evil, Arial, Helvetica, sans-serif;
   font-size: large;
 }
 p,a{
   font-weight: 900;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 figcaption{
   margin-top: 5px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 900;
 }
 
 .flex-inline{
@@ -58,19 +56,6 @@ figcaption{
   white-space: nowrap;
   align-items: center;
 }
-
-
-@font-face {
-  font-family: evil;
-  src: url("/assets/fonts/evil-empire-font/EvilEmpire-4BBVK.ttf");
-}
-
-
-
-.font-evil{
-  font-family: evil;
-}
-
 
 .cpy-clipboard{
   margin-left: 5px;

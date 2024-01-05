@@ -75,7 +75,7 @@ function Landing() {
 
                         </span>
                     </p>
-                    <a id="download" className="font-evil green" href="/assets/cv.pdf" aria-label='see my resume'>SEE MY RESUME</a>
+                    <a id="download" className=" green" href="/assets/cv.pdf" aria-label='see my resume'>SEE MY RESUME</a>
                 </span>
             </div>
         </>

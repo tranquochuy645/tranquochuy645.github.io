@@ -3,6 +3,7 @@ import './Head.css'
 const Head = () => {
     function dropDownNav() {
         document.getElementById("menu-btn-wrapper")?.classList.toggle("opened");
+        document.getElementById("nav-wrapper")?.classList.toggle("opened");
         document.getElementById("nav-ul")?.classList.toggle("opened");
     }
     return (
@@ -19,9 +20,9 @@ const Head = () => {
                     </svg>
                 </a>
                 <ul id="nav-ul" >
-                    <li className='nav-ul-li'><a className="nav-ul-li-a font-evil" href="#skills" aria-label="Skills section"><img className="nav-ul-li-a-img" src='/assets/imgs/tool.svg' />&nbsp;Skills</a></li>
-                    <li className='nav-ul-li '><a className="nav-ul-li-a font-evil" href="#projects" aria-label="Projects section"><img className="nav-ul-li-a-img" src='/assets/imgs/project.svg' />&nbsp;Projects</a></li>
-                    <li className='nav-ul-li'><a className="nav-ul-li-a font-evil" href="#contact" aria-label="Contact section"><img className="nav-ul-li-a-img" src='/assets/imgs/contact.svg' />&nbsp;Contact</a></li>
+                    <li className='nav-ul-li'><a className="nav-ul-li-a " href="#skills" aria-label="Skills section"><img className="nav-ul-li-a-img" src='/assets/imgs/tool.svg' />&nbsp;Skills</a></li>
+                    <li className='nav-ul-li '><a className="nav-ul-li-a " href="#projects" aria-label="Projects section"><img className="nav-ul-li-a-img" src='/assets/imgs/project.svg' />&nbsp;Projects</a></li>
+                    <li className='nav-ul-li'><a className="nav-ul-li-a " href="#contact" aria-label="Contact section"><img className="nav-ul-li-a-img" src='/assets/imgs/contact.svg' />&nbsp;Contact</a></li>
                 </ul>
             </div>
             <div id='menu-btn-wrapper' onClick={dropDownNav}>
