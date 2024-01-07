@@ -30,7 +30,7 @@
     box-sizing: border-box;
 }
 
-#nav-div-1-a:hover {
+#nav-div-1-a:active {
     background-color: rgba(67, 41, 86, 0.525);
     box-shadow: 4px 10px 15px 1px rgba(75, 75, 75, 0.5);
 }
@@ -84,11 +84,6 @@
 }
 
 
-.nav-ul-li-a:hover {
-    background-color: rgba(67, 41, 86, 0.525);
-    box-shadow: 4px 10px 15px 1px rgba(75, 75, 75, 0.5);
-}
-
 .nav-ul-li-a:active {
     background-color: rgba(67, 41, 86, 0.525);
     box-shadow: 4px 10px 15px 1px rgba(75, 75, 75, 0.5);
@@ -108,7 +103,7 @@
     height: clamp(60px, 7vw, 120px);
     width: clamp(60px, 7vw, 120px);
 }
-#menu-svg:hover {
+#menu-svg:active {
     background-color: rgba(67, 41, 86, 0.525);
     box-shadow: 4px 10px 15px 1px rgba(75, 75, 75, 0.5);
 }

@@ -3,15 +3,15 @@ import './Head.css'
 const Head = () => {
     let yPos: number;
     let timer: any;
-    let isUnDocked: any = true;
-    let isHidden: any = false;
-    let isOpened: any = false;
+    let isUnDocked: any = document.getElementById("nav-wrapper")?.classList.contains("undocked");
+    let isHidden: any = document.getElementById("nav-wrapper")?.classList.contains("hidden");
+    let isOpened: any = document.getElementById("menu-btn-wrapper")?.classList.toggle("opened");
 
     const checkState = () => {
         if (isOpened) return;
-        if (yPos>1) {
+        if (yPos > 1) {
             !isHidden && toggleHide();
-        }else{
+        } else {
             isUnDocked && toggleDock();
         }
     };
@@ -52,7 +52,7 @@ const Head = () => {
     const handleMouseMove = (e: MouseEvent) => {
         if (isOpened) return;
         if (e.clientY > 129) {
-            if(yPos>1) return;
+            if (yPos > 1) return;
             isUnDocked && toggleDock();
             return;
         }
