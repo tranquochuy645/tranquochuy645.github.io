@@ -4,6 +4,7 @@
 }
 #checkout-container{
     border: solid grey;
+    background: rgba(0, 0, 0, 0.628);
     margin-left: calc(50% - 100px);
     width: 200px;
     transition: 0.3s;

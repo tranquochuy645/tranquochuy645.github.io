@@ -26,13 +26,15 @@ section {
 /* fjkhksd */
 
 .green {
-  color: #00f81d !important;
+  color: #25ff2c !important;
 }
 .white{
   color: white;
 }
 .tabLeft{
-  padding-left: 4vw;
+  background:  rgba(0, 0, 0, 0.628);
+  border-radius: 10px;
+  padding: 5px 0 5px 2vw;
 }
 
 
