@@ -18,14 +18,14 @@ function Landing() {
         for (let i = 0; i < 6; i++) {
             el.push(el_wrapper?.querySelector(`#t_${i}`));
         }
-        typeParagraph(el, arrT, 30, 2000)
+        typeParagraph(el, arrT, 20, 2000)
         setTimeout(
             () => {
                 let d = document.querySelector<HTMLElement>('#download')
                 if (d) {
                     d.style.display = "flex";
                 }
-            }, (arrTTotalLength * 30 + 2000)
+            }, (arrTTotalLength * 20 + 2000)
         )
 
     }, [])
@@ -69,13 +69,12 @@ function Landing() {
                     </p>
                     <p>
                         <span id='t_4'>
-
                         </span>
                         <span id='t_5' className='green'>
 
                         </span>
                     </p>
-                    <a id="download" className=" green" href="/assets/cv.pdf" aria-label='see my resume'>SEE MY RESUME</a>
+                    <a id="download" className=" green" href="/assets/TranQuocHuy_WebDeveloper.pdf" aria-label='see my resume'>SEE MY RESUME</a>
                 </span>
             </div>
         </>
