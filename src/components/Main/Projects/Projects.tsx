@@ -31,11 +31,11 @@ function Projects() {
                             const filteredRepositories = data.filter(repo => (repo.homepage != "" && repo.html_url != "https://github.com/tranquochuy645/tranquochuy645"));
                             setRepositories(filteredRepositories);
                         })
-
                     }
                 ).catch(
-                    (e) => {
-                        e = null; //prevent browser logging network error to console
+                    (onrejected) => {
+                        console.log(onrejected?.reason);
+                         //prevent browser logging network error to console
                     }
                 );
         } catch (error) {
