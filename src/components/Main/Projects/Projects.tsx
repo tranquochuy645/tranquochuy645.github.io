@@ -22,17 +22,22 @@ function Projects() {
     const url = 'https://api.github.com/users/tranquochuy645/repos?sort=created';
 
     useEffect(() => {
-        fetch(url)
-            .then(
-                (response) => {
-                    if (response.ok) {
-                        response.json().then((data: Repository[]) => {
-                            const filteredRepositories = data.filter(repo => (repo.homepage != "" && repo.html_url != "https://github.com/tranquochuy645/tranquochuy645"));
-                            setRepositories(filteredRepositories);
-                        })
+        try {
+            fetch(url)
+                .then(
+                    (response) => {
+                        if (response.ok) {
+                            response.json().then((data: Repository[]) => {
+                                const filteredRepositories = data.filter(repo => (repo.homepage != "" && repo.html_url != "https://github.com/tranquochuy645/tranquochuy645"));
+                                setRepositories(filteredRepositories);
+                            })
+                        }
                     }
-                }
-            );
+                );
+        } catch (error) {
+            //Workaround for network error logging
+            return;
+        }
     }, []);
 
     return (
