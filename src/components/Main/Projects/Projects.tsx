@@ -23,12 +23,16 @@ function Projects() {
 
     useEffect(() => {
         fetch(url)
-            .then((response) => response.json())
-            .then((data: Repository[]) => {
-                const filteredRepositories = data.filter(repo => (repo.homepage != "" && repo.html_url != "https://github.com/tranquochuy645/tranquochuy645"));
-                setRepositories(filteredRepositories);
-            })
-            .catch();
+            .then(
+                (response) => {
+                    if (response.ok) {
+                        response.json().then((data: Repository[]) => {
+                            const filteredRepositories = data.filter(repo => (repo.homepage != "" && repo.html_url != "https://github.com/tranquochuy645/tranquochuy645"));
+                            setRepositories(filteredRepositories);
+                        })
+                    }
+                }
+            )
     }, []);
 
     return (

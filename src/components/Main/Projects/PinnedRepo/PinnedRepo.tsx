@@ -74,8 +74,7 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
     getCommitCount(repository.commits_url)
       .then((count) => {
         setCommitCount(count);
-      })
-      .catch();
+      });
   }, [repository.commits_url]);
 
   const displaySize =
