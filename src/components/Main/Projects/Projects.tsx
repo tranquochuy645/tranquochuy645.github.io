@@ -26,12 +26,16 @@ function Projects() {
             fetch(url)
                 .then(
                     (response) => {
-                        if (response.ok) {
-                            response.json().then((data: Repository[]) => {
-                                const filteredRepositories = data.filter(repo => (repo.homepage != "" && repo.html_url != "https://github.com/tranquochuy645/tranquochuy645"));
-                                setRepositories(filteredRepositories);
-                            })
-                        }
+                        if (!response.ok) return;
+                        response.json().then((data: Repository[]) => {
+                            const filteredRepositories = data.filter(repo => (repo.homepage != "" && repo.html_url != "https://github.com/tranquochuy645/tranquochuy645"));
+                            setRepositories(filteredRepositories);
+                        })
+
+                    }
+                ).catch(
+                    (e) => {
+                        e = null; //prevent browser logging network error to console
                     }
                 );
         } catch (error) {
