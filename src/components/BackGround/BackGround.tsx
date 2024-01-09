@@ -7,7 +7,7 @@ function BackGround() {
     return (
 
         <svg id="bgrn-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" preserveAspectRatio="none" >
-            <rect id="bgrn-rect" fill="#260026" />
+            <rect id="bgrn-rect" fill="#1c001c" />
             <g id="bgrn-g-1" fill="none" stroke="#3B1B4F" strokeWidth="1">
                 <path
                     d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63' />

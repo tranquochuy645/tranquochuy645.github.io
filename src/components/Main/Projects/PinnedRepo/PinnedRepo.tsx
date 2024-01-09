@@ -60,7 +60,7 @@ const getCommitCount = (commits_url: string): Promise<string> => {
 
         return "0"; // Default to 0 if commit count is not found
       }
-    );
+    ).catch(() => { return "?" });
 };
 const formatTimestamp = (timestamp: string) => {
   const date = new Date(timestamp);
