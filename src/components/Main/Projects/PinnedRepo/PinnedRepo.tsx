@@ -91,7 +91,7 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
       {({ isVisible }: { isVisible: boolean }) =>
         <a className={`repo-container floating-bg none-decoration  ${isVisible ? 'visible' : ''}`} href={repository.html_url} aria-label='visit repo'>
           <h2 className='green'>
-            <img className='repo-img' src='/assets/imgs/repo.png' ></img> {repository.description}
+            <img alt="repo" className='repo-img' src='/assets/imgs/repo.png' ></img> {repository.description}
           </h2>
           <p className=" white">
             <span>
@@ -99,11 +99,11 @@ const PinnedRepo: React.FC<PinnedRepoProps> = ({ repository }) => {
             </span>
             <span>
               {repository.stargazers_count}&nbsp;
-              <img className="icon" src="/assets/imgs/star.svg"></img>&nbsp;&nbsp;&nbsp;&nbsp;
+              <img alt="star" className="icon" src="/assets/imgs/star.svg"></img>&nbsp;&nbsp;&nbsp;&nbsp;
             </span>
             <span>
               {repository.forks_count}&nbsp;
-              <img className="icon" src="/assets/imgs/fork.svg"></img>&nbsp;&nbsp;&nbsp;&nbsp;
+              <img alt="fork" className="icon" src="/assets/imgs/fork.svg"></img>&nbsp;&nbsp;&nbsp;&nbsp;
             </span>
             <span>
               {commitCount}&nbsp;commits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
