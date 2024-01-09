@@ -40,7 +40,6 @@ function Projects() {
                 );
         } catch (error) {
             //Workaround for network error logging
-            return;
         }
     }, []);
 

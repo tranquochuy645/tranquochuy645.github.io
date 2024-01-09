@@ -45,10 +45,10 @@ const getLanguageIcon = (language: string | undefined) => {
 
 const getCommitCount = (commits_url: string): Promise<string> => {
   commits_url = commits_url.replace("{/sha}", "?per_page=1&page=1");
-
   return fetch(commits_url)
     .then(
       (res) => {
+        if (!res.ok) return "?";
         const linkHeader = res.headers.get("Link") || "";
         const commitCountRegex = /page=(\d+)>;\s*rel="last"/;
         const match = commitCountRegex.exec(linkHeader);
@@ -57,10 +57,14 @@ const getCommitCount = (commits_url: string): Promise<string> => {
           const commitCount = match[1];
           return commitCount;
         }
-
         return "0"; // Default to 0 if commit count is not found
       }
-    );
+    ).catch(
+      (onrejected) => {
+        console.log(onrejected?.reason);
+        return "?";
+      });
+
 };
 const formatTimestamp = (timestamp: string) => {
   const date = new Date(timestamp);
