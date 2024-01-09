@@ -1,4 +1,9 @@
 # My portfolio built with ReactJS 
-## It's not done yet ... :)
 
-Available here: https://tranquochuy645.github.io/
+https://tranquochuy645.github.io/
+
+Lighthouse scores
+
+<img src="https://tranquochuy645.github.io/assets/imgs/score.png"></img>
+
+Full Lighthouse report: https://tranquochuy645.github.io/assets/LighthouseReport.pdf
