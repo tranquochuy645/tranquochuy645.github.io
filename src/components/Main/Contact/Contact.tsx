@@ -45,7 +45,7 @@ function Contact() {
                         </div>
                         <img id="contribution-chart" src="https://ghchart.rshah.org/39BD00/tranquochuy645" alt="Huy's contributions this year"></img>
                     </div>
-                    <img alt="prefered langs" id="prefered-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=tranquochuy645&langs_count=8&layout=donut&hide_border=true&bg_color=00000000&title_color=70ff2d&text_color=fff" />
+                    <img alt="prefered langs" id="prefered-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=tranquochuy645&langs_count=8&layout=donut&hide_border=true&bg_color=00000000&title_color=9fff56&text_color=fff" />
                 </div>
             </div>
         </>
