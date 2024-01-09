@@ -32,7 +32,7 @@ function Projects() {
                         })
                     }
                 }
-            ).catch();
+            );
     }, []);
 
     return (
