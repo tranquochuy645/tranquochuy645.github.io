@@ -28,9 +28,6 @@ function Projects() {
                 const filteredRepositories = data.filter(repo => (repo.homepage != "" && repo.html_url != "https://github.com/tranquochuy645/tranquochuy645"));
                 setRepositories(filteredRepositories);
             });
-            // .catch((error) => {
-            //     console.error('Error fetching repositories:', error);
-            // });
     }, []);
 
     return (
