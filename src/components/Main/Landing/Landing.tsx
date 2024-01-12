@@ -38,7 +38,7 @@ function Landing() {
                     <p>Web developer</p>
                     <p>
                         <span>&#x1F4EB;&nbsp;&nbsp;</span>
-                        <a className="green none-decoration-exhov" aria-label="Send email" href="mailto:tranquochuy645@gmail.com">tranquochuy645@gmail.com</a>
+                        <a className="white none-decoration-exhov" aria-label="Send email" href="mailto:tranquochuy645@gmail.com">tranquochuy645@gmail.com</a>
                         <img className="cpy-clipboard" alt="copy to clipboard"
                             src="/assets/imgs/copy-alt-regular-24.png"
                             onClick={
@@ -47,7 +47,7 @@ function Landing() {
                     </p>
                     <p>
                         <span>📱&nbsp;&nbsp;</span>
-                        <a className="green none-decoration-exhov" aria-label="Tel" href="tel:+84378258645">+84 37 825 8645</a>
+                        <a className="white none-decoration-exhov" aria-label="Tel" href="tel:+84378258645">+84 37 825 8645</a>
                         <img
                             className="cpy-clipboard"
                             src="/assets/imgs/copy-alt-regular-24.png" alt="copy to clipboard"
