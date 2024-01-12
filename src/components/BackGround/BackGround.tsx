@@ -20,13 +20,13 @@ function BackGround() {
                     d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269' />
 
             </g>
-            <filter id="glow">
+            {/* <filter id="glow">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
                 <feMerge>
                     <feMergeNode in="blur" />
                     <feMergeNode in="SourceGraphic" />
                 </feMerge>
-            </filter>
+            </filter> */}
             <g id="bgrn-g-2" fill="#ff82b2" >
                 <circle className='bgrn-g-2-cir' cx='769' cy='229' r='3' />
                 <circle className='bgrn-g-2-cir' cx='539' cy='269' r='3' />

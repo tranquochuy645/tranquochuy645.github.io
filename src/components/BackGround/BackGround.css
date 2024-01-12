@@ -22,10 +22,9 @@
      stroke-dashoffset: 0;
      animation: draw_background 10s linear infinite;
  }
- #bgrn-g-2{
+ /* #bgrn-g-2{
     filter:url(#glow);
-   
- }
+ } */
  .bgrn-g-2-cir{
     animation: pulse 3s ease-in-out infinite;
  }

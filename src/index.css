@@ -1,7 +1,7 @@
 /* Browser filter */
 /* Some rule to ensure different browsers's performance */
 /** Internet Explorer */
-@media all and (-ms-high-contrast: none),
+/* @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
   #bgrn-g-2 {
     filter: none !important;
@@ -12,25 +12,25 @@
 /* @supports (-ms-ime-align: auto) {} */
 
 /** Mozilla Firefox */
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   #bgrn-g-2 {
     filter: none !important;
   }
-}
+} */
 
 /** Safari */
-@media not all and (min-resolution: 0.001dpcm) {
+/* @media not all and (min-resolution: 0.001dpcm) {
   #bgrn-g-2 {
     filter: none !important;
   }
-}
+} */
 
 /* mobile */
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   #bgrn-g-2 {
     filter: none !important;
   }
-}
+} */ */
 
 /** Chrominum */
 /* @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {} */
