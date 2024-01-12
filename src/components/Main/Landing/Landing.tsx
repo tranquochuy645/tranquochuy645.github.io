@@ -34,10 +34,11 @@ function Landing() {
             <div id='about' className='floating-bg'>
                 <span id="about-span-1" className='about-span'>
                     <img id="profile-img" src="/assets/imgs/profile.jpg" alt="profile picture" />
-                    <h2>Tran Quoc Huy</h2>
-                    <p>Student</p>
+                    <h1>Tran Quoc Huy</h1>
+                    <p>Web developer</p>
                     <p>
-                        <span>&#x1F4EB;&nbsp;&nbsp;tranquochuy645@gmail.com</span>
+                        <span>&#x1F4EB;&nbsp;&nbsp;</span>
+                        <a className="green none-decoration-exhov" aria-label="Send email" href="mailto:tranquochuy645@gmail.com">tranquochuy645@gmail.com</a>
                         <img className="cpy-clipboard" alt="copy to clipboard"
                             src="/assets/imgs/copy-alt-regular-24.png"
                             onClick={
@@ -45,7 +46,8 @@ function Landing() {
                             } />
                     </p>
                     <p>
-                        <span>📱&nbsp;&nbsp;+84 37 825 8645</span>
+                        <span>📱&nbsp;&nbsp;</span>
+                        <a className="green none-decoration-exhov" aria-label="Tel" href="tel:+84378258645">+84 37 825 8645</a>
                         <img
                             className="cpy-clipboard"
                             src="/assets/imgs/copy-alt-regular-24.png" alt="copy to clipboard"

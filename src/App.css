@@ -69,6 +69,7 @@ figcaption{
 }
 .cpy-clipboard:hover{
   opacity: 1;
+  scale: 1.1;
 }
 .cpy-clipboard:active{
   background-color: #ffffff69;
