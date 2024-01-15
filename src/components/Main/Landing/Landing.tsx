@@ -10,7 +10,7 @@ function Landing() {
             "I will be graduating in 2024 with a major in Embedded Systems and IoT from ",
             "HCMC University of Technology and Education",
             "My academic journey started with network and hardware in embedded systems but shifted to web development, fueled by a passion that now directs my career toward becoming a ",
-            "Back-end Developer"
+            "Software engineer"
         ]
         const arrTTotalLength = arrT.reduce((accumulator, currentValue) => accumulator + currentValue.length, 0);
         const el_wrapper = document.querySelector('#about-span-2');
@@ -35,7 +35,6 @@ function Landing() {
                 <span id="about-span-1" className='about-span'>
                     <img id="profile-img" src="/assets/imgs/profile.jpg" alt="profile picture" />
                     <h1>Tran Quoc Huy</h1>
-                    <p>Web developer</p>
                     <p>
                         <span>&#x1F4EB;&nbsp;&nbsp;</span>
                         <a className="white none-decoration-exhov" aria-label="Send email" href="mailto:tranquochuy645@gmail.com">tranquochuy645@gmail.com</a>
