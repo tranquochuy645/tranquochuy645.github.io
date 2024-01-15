@@ -37,11 +37,19 @@
 
 /* Browser filter */
 
-html {
+html{
   scroll-behavior: smooth;
-  overflow-x: auto;
+}
+html:focus-within {
+  /* idk why but without this rule, "scroll-behavior: smooth;" doesn't work */
+  scroll-behavior: smooth;
 }
 
+body{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
 
 .floating-bg {
   background-image: linear-gradient(rgba(16, 16, 41, 0.7), rgba(15, 4, 4, 0.7));

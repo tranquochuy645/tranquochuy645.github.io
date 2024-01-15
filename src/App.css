@@ -1,17 +1,10 @@
-body{
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-}
-
 section {
   padding-left: 4vw;
   padding-right: 4vw;
-  padding-top: 2vh;
+  padding-top: clamp(80px, 8.5vh, 340px);
   padding-bottom: 4vh;
   overflow-x: hidden;
   box-sizing: border-box;
-  padding-top: clamp(70px, 12vw, 140px);
   min-height:100vh;
 }
 .none-decoration{
@@ -23,7 +16,6 @@ section {
 .none-decoration-exhov:hover{
   text-decoration: underline;
 }
-/* fjkhksd */
 
 .green {
   color: #25ff2c !important;

@@ -14,20 +14,34 @@
 
  }
 
-
-#bgrn-g-1 {
-
-     fill: "white";
+ #bgrn-g-1 {
      stroke-dasharray: 1000;
      stroke-dashoffset: 0;
      animation: draw_background 10s linear infinite;
  }
- /* #bgrn-g-2{
-    filter:url(#glow);
+/* 
+ #bgrn-g-2 {
+     filter: none;
  } */
- .bgrn-g-2-cir{
-    animation: pulse 3s ease-in-out infinite;
+
+ .bgrn-g-2-cir {
+     animation: pulse 3s ease-in-out infinite;
  }
+
+ @keyframes draw_background {
+     0% {
+         stroke-dashoffset: 0;
+     }
+
+     50% {
+         stroke-dashoffset: 1000;
+     }
+
+     100% {
+         stroke-dashoffset: 2000;
+     }
+ }
+
 
  @keyframes pulse {
      0% {
@@ -35,7 +49,7 @@
      }
 
      50% {
-         
+
          filter: brightness(0.5);
      }
 
