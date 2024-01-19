@@ -7,10 +7,10 @@ function Landing() {
         const arrT = [
             "HI, I'M ",
             "HUY",
+            "As a tech enthusiast, I am actively pursuing my career as a ",
+            "Software engineer",
             "I will be graduating in 2024 with a major in Embedded Systems and IoT from ",
-            "HCMC University of Technology and Education",
-            "My academic journey started with network and hardware in embedded systems but shifted to web development, fueled by a passion that now directs my career toward becoming a ",
-            "Software engineer"
+            "@HCMUTE"
         ]
         const arrTTotalLength = arrT.reduce((accumulator, currentValue) => accumulator + currentValue.length, 0);
         const el_wrapper = document.querySelector('#about-span-2');
@@ -62,18 +62,16 @@ function Landing() {
                     </h1>
                     <p>
                         <span id='t_2'>
-
                         </span>
-                        <a id='t_3' className="green none-decoration-exhov" href="https://hcmute.edu.vn/" aria-label="HCMUTE website">
-
-                        </a>
+                        <span id='t_3' className="green" >
+                        </span>
                     </p>
                     <p>
                         <span id='t_4'>
                         </span>
-                        <span id='t_5' className='green'>
+                        <a id='t_5' className='green  none-decoration-exhov' href="https://hcmute.edu.vn/" aria-label="HCMUTE website">
 
-                        </span>
+                        </a>
                     </p>
                     <a id="download" className=" green" href="/assets/TranQuocHuy_SoftwareDeveloper.pdf" aria-label='see my resume'>SEE MY RESUME</a>
                 </span>
